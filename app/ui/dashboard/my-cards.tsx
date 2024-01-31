@@ -9,6 +9,9 @@ import {
 import { mono, inconsolata } from '@/app/ui/fonts';
 import { companies, skillsBundle, certificatesBundle } from '@/app/lib/data'
 
+import { ImageData, Role, Company, Certificate} from "@/app/lib/definitions";
+
+
 import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
@@ -59,20 +62,19 @@ export function ProfileCard() {
 export function CompanyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3" >
-            {companies.map((item) => {
-                return(CompanyCard(item.imageData, item.roles, item.location));
+            {companies.map((item:Company, idxj:number) => {
+                return(CompanyCard(item.imageData, item.roles, item.location, idxj));
             })}
         </div>
     );
-}
+}  
 
-function CompanyCard(imageData:any, roles:any[], location:string){
+function CompanyCard(imageData:ImageData, roles:Role[], location:string, idxj:number){
     return (
-        <div className="m-auto w-full overflow-clip shadow rounded p-6 ">
+        <div className="m-auto w-full overflow-clip shadow rounded p-6 "  key={idxj}>
             <div className="relative flex pb-3 flex-col align-left gap-3">
             <div className="z-10 flex flex-row grid grid-cols-2">
                     <Image
-                    key={imageData.alt}
                     alt={imageData.alt}
                     src={`/images/` + imageData.src} 
                     width={imageData.w}
@@ -80,12 +82,16 @@ function CompanyCard(imageData:any, roles:any[], location:string){
                     />
                 <h1 className={`${inconsolata.className} text-right mx-4`}>{location}</h1>
             </div>
-            {roles.map((role) => {
+            {roles.map((role:Role, idxk:number) => {
                 return(
-                    <div className="z-10 flex flex-col ">
+                    <div className="z-10 flex flex-col" key={idxk}>
                         <div className="z-10 flex flex-row grid grid-cols-2">
-                            <h1 className={`${mono.className} text-left	text-xl`}>{role.title}</h1>
-                            <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>
+                            <div>
+                                <h1 className={`${mono.className} text-left	text-xl`}>{role.title}</h1>
+                            </div>
+                            <div>
+                                <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>
+                            </div>
                         </div>
                             {role.description.map((point:string,idx:number) => {
                                 return (<><li key={idx} className={`px-5`}>{point}</li> </>); 
@@ -101,19 +107,19 @@ function CompanyCard(imageData:any, roles:any[], location:string){
 export function CertificateyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3 w-full" >  
-            {certificatesBundle.map((item) => {    
+            {certificatesBundle.map((item:Certificate) => {    
                 return (CertificateCard(item.title,item.collection));
             })}           
         </div>
     );
 }
 
-function CertificateCard(title:string, section:any){
+function CertificateCard(title:string, collection:ImageData[]){
     return (
         <div className="m-auto w-full shadow rounded p-6 ">
             <h1 className={`${inconsolata.className} text-left text-2xl`}>{title}</h1>
                 <div className="m-auto w-full flex flex-row overflow-x-auto  rounded p-6 ">
-                    {section.map((item) => {
+                    {collection.map((item) => {
                         return(
                         <div className="relative flex p-3 flex-row flex-shrink-0"> 
                             <div className="z-10 flex flex-wrap items-center justify-center gap-4 flex-wrap"> 
@@ -143,7 +149,7 @@ export function SkillCards() {
     
 }
 
-function CardTempl(title:string, images: any[]) {
+function CardTempl(title:string, images: ImageData[]) {
     return (            
         <div className="m-auto overflow-clip shadow rounded ">
             <h1 className={`${mono.className} mt-3 mx-3`}>{title}</h1>

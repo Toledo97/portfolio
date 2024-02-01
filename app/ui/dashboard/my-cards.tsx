@@ -7,9 +7,9 @@ import {
 } from '@heroicons/react/24/outline';
 
 import { mono, inconsolata } from '@/app/ui/fonts';
-import { companies, skillsBundle, certificatesBundle } from '@/app/lib/data'
+import { companies, activities, skillsBundle, certificatesBundle } from '@/app/lib/data'
 
-import { ImageData, Role, Company, Certificate} from "@/app/lib/definitions";
+import { ImageData, Role, Company, Certificate, Activity} from "@/app/lib/definitions";
 
 
 import Image from 'next/image';
@@ -59,6 +59,16 @@ export function ProfileCard() {
     );
 }
 
+export function ActivitiesCardGrid(){
+    return(
+        <div className="mt-2 flex flex-col gap-3" >
+            {activities.map((item:Activity, idxj:number) => {
+                return(CompanyCard(item.imageData, item.roles, item.subTitle, idxj));
+            })}
+        </div>
+    );
+}  
+
 export function CompanyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3" >
@@ -87,7 +97,7 @@ function CompanyCard(imageData:ImageData, roles:Role[], location:string, idxj:nu
                     <div className="z-10 flex flex-col" key={idxk}>
                         <div className="z-10 flex flex-row grid grid-cols-2">
                             <div>
-                                <h1 className={`${mono.className} text-left	text-xl`}>{role.title}</h1>
+                                <h1 className={`${mono.className} text-left	text-xl inline-block`}>{role.title}</h1>
                             </div>
                             <div>
                                 <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>

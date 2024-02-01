@@ -18,6 +18,12 @@ export type Company = {
   location: string;
   roles: Role[];
 }
+export type Activity = {
+  imageData: ImageData;
+  subTitle: string;
+  roles: Role[];
+}
+
 
 export type Certificate = {
   title: string;

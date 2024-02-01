@@ -66,11 +66,11 @@ const skillsBundle = [
 
 const activities = [
   {
-    org: "First Lego League",
+    imageData: {alt: "First Lego League", src: "activities/fll-logo.png", w:175, h:0}, 
     subTitle: "Champaign, IL",
     roles: [
       { 
-        Title: "Volunteer",
+        title: "Volunteer",
         timeline: "Jan 2023 - May 2023",
         description: [
           `I served as a coach / mentor to the teams, helping them learn about robotics, coding, and problem-solving. 
@@ -79,71 +79,50 @@ const activities = [
           `I helped with workshops on specific skills, including sessions on programming LEGO SPIKE robots, 
           brainstorming solutions to problems, and effectively presenting and communicating.`
         ],
-        verify: false
       }
     ]
   },
   {
-    org: "IBM Accelerate Program",
-    subTitle: "Hardware Developer Track",
-    roles: [
-      { 
-        Title: `Through IBM subject matter expert-led education, the following concepts were explored and researched:`,
-        timeline: "Jun 2022 - Jul 2022",
-        description: [
-          `logic design, processor and hardware development, product engineering, firmware development.`,
-          `relationship building, learning agility, corporate communications, emotional intelligence, 
-          growth mindset, resume building and interviewing.`
-        ],
-        verify: true
-      }
-    ]
-  },
-  {
-    org: "Expert Learning Assistant",
+    imageData: {alt: "Expert Learning Assistant", src: "activities/physics.png", w:275, h:0}, 
     subTitle: "Urbana, IL",
     roles: [
       { 
-        Title: `University Physics: Mechanics / Electricity & Magnetism`,
+        title: `Expert Learning Assistant`,
         timeline: "Aug 2020 - May 2021",
         description: [
           `Assisted students and instructors with lab activities and discuss useful methods of lab completion for students.`,
           `Practiced effective questioning and active listening strategies when engaging with students.`
         ],
-        verify: false
       }
     ]
   },
   {
-    org: "SHPE UIUC Chapter",
+    imageData: {alt: "SHPE UIUC Chapter", src: "activities/shpe.png", w:175, h:0}, 
     subTitle: "Urbana, IL",
     roles: [
       { 
-        Title: "Fundraising Co-Lead",
+        title: "Fundraising Co-Lead",
         timeline: "July 2020 - May 2021",
         description: [
           `Brainstormed, organized and facilitated creative alternatives fundraising events for the organization and local charities.`,
           `Efficiently communicated with my co-lead for budgeting schemes to prevent overspending and fundraising logistic.`
         ],
-        verify: false
       },
       { 
-        Title: "Activities Lead",
+        title: "Activities Lead",
         timeline: "July 2020 - May 2021",
         description: [
           `Created alternative online activities for the organization's outreach programs that are both engaging and constructive.`,
           `Organized and executed activities with a written plan to prepare for any logistical issues.`
         ],
-        verify: false
       },
       { 
-        Title: "Round-Table Treasurer",
+        title: "Round-Table Treasurer",
         timeline: "Aug 2019 - May 2020",
         description: [
           `Planned and executed fundraising events to raise money for social events and non-profit organizations.`,
           `Lead a team to organize the biggest event for SHPE, the date auction / dance, for funding the UIUC Chapter.`
         ],
-        verify: false
       }
     ]
   },
@@ -151,18 +130,19 @@ const activities = [
 
 
 const companies = [
-{   imageData: {alt: "Carle Health", src: "carle.png", w:135, h:0}, 
+{   
+  imageData: {alt: "Carle Health", src: "carle.png", w:135, h:0}, 
   location: "Champaign, IL",
   roles: [
   {
       title:"Sys-Ops & Care Mgmt Analyst", 
       timeline: "Feb 2024 - Current",
       description: [],
-      verify: false
   }
   ]
 },
-{   imageData: {alt: "Motorola Solutions", src: "Motorola-Solutions.png", w:275, h:0},
+{   
+  imageData: {alt: "Motorola Solutions", src: "Motorola-Solutions.png", w:275, h:0},
   location: "Champaign, IL",
   roles: [
   {
@@ -177,7 +157,6 @@ const companies = [
       project updates, ensuring myself and team members were well-informed and 
       aligned with project goals.`
       ],
-      verify: false
   },
   {
       title:"Software Engineer: Backend", 
@@ -190,11 +169,11 @@ const companies = [
       `Engaged with an international teams in daily design meetings to drive 
       project success and maintain clear communication to meet biweekly sprint goals.`
       ],
-      verify: false
   }
   ],
 },
-{   imageData: {alt: "IBM", src: "ibm.png", w:100, h:0},
+{   
+  imageData: {alt: "IBM", src: "ibm.png", w:100, h:0},
   location: "Bloomginton, IL",
   roles: [
   {
@@ -208,7 +187,6 @@ const companies = [
       `Engaged in secure coding practices incorporating user / pw protocols to safeguard 
       sensitive user information and maintain system integrity.`
       ],
-      verify: false
   },
   ],
 },

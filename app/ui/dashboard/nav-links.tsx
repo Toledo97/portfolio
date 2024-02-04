@@ -19,8 +19,8 @@ const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   { name: 'Experience', href: '/dashboard/experience', icon: BuildingOffice2Icon },
   { name: 'Projects', href: '/dashboard/projects', icon: BeakerIcon },
-  { name: 'Activities', href: '/dashboard/activities', icon: ListBulletIcon },
   { name: 'eLearning', href: '/dashboard/elearning', icon: AcademicCapIcon },
+  { name: 'Activities', href: '/dashboard/activities', icon: ListBulletIcon },
   { name: 'Guestbook', href: '/dashboard/guestbook', icon: BookOpenIcon }
 ];
 

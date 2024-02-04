@@ -1,31 +1,34 @@
-
 export type ImageData = {
   alt: string;
   src: string;
   w: number;
   h: number;
+  verify?: string;
+  issued?: string;
 }
 
 export type Role = {
   title: string;
   timeline: string;
   description: string[];
-  verify: boolean;
 }
 
-export type Company = {
+export type Entity = {
   imageData: ImageData;
-  location: string;
   roles: Role[];
+  subTitle?: string;
+  location?: string;
 }
-export type Activity = {
-  imageData: ImageData;
-  subTitle: string;
-  roles: Role[];
-}
-
 
 export type Certificate = {
   title: string;
   collection: ImageData[];
+}
+
+export type Project = {
+  title: string;
+  subTitle: string;
+  location: string;
+  timeline: string;
+  description: string[];
 }

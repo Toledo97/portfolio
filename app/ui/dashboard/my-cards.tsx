@@ -156,6 +156,7 @@ export function CertificateyCardGrid(){
 }
 
 function CertificateCard(title:string, collection:ImageData[]){
+    
     return (
         <div className="m-auto w-full shadow rounded p-6 ">
             <h1 className={`${inconsolata.className} text-left text-2xl`}>{title}</h1>

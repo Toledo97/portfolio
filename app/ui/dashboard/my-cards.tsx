@@ -161,13 +161,12 @@ function CertificateCard(title:string, collection:ImageData[]){
         <div className="m-auto w-full shadow rounded p-6 ">
             <h1 className={`${inconsolata.className} text-left text-2xl`}>{title}</h1>
                 <div className="m-auto w-full flex flex-row overflow-x-auto rounded p-6 gap-6">
-                    {collection.map((item) => {
+                    {collection.map((item:ImageData, idx:number) => {
                         return(
-                        <div className="relative flex p-3 flex-shrink-0 "> 
+                        <div className="relative flex p-3 flex-shrink-0" key={idx}> 
                             <div className="z-10 flex flex-col items-center justify-center flex-wrap">
                                 <div className="relative align-right">
                                     <Link
-                                        key={item.alt}
                                         href={item.verify}>
                                         <Image
                                             src={`/images/verify.png`}
@@ -178,7 +177,6 @@ function CertificateCard(title:string, collection:ImageData[]){
                                         />
                                     </Link>
                                         <Image
-                                            key={item.alt}
                                             alt={item.alt}
                                             src={`/images/certificates/` + item.src} 
                                             width={item.w}

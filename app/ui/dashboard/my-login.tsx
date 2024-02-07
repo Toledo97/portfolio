@@ -29,8 +29,10 @@ export default function LoggingIn() {
           setUser(result.user.displayName),
           setUID(result.user.uid),
         ]);
-      window.sessionStorage.setItem('user',result.user.displayName);
-      window.sessionStorage.setItem('uid',result.user.uid);
+        if (typeof window !== undefined){
+          window.sessionStorage.setItem('user',result.user.displayName);
+          window.sessionStorage.setItem('uid',result.user.uid);
+        }
     }).catch((err)=>{
       console.log(err);
     })
@@ -38,7 +40,8 @@ export default function LoggingIn() {
 
   const handleLogout=()=>{
     setUser(null);
-    window.sessionStorage.clear();
+    if (typeof window !== undefined){
+      window.sessionStorage.clear();}
   }
 
   return (

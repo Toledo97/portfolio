@@ -20,7 +20,7 @@ export type Entity = {
   location?: string;
 }
 
-export type Certificate = {
+export type Skill = {
   title: string;
   collection: ImageData[];
 }
@@ -32,3 +32,4 @@ export type Project = {
   timeline: string;
   description: string[];
 }
+

@@ -4,8 +4,8 @@ import {use, useState} from 'react';
 import {auth, provider} from '@/firebase.config';
 import { signInWithPopup } from 'firebase/auth';
 
-export default function LoggingIn() {
-
+export default function LoggingIn() 
+{
   const [user, setUser] = useState(null);
   const [uid, setUID] = useState(null);
 

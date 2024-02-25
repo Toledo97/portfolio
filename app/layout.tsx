@@ -7,8 +7,7 @@ export const metadata: Metadata = {
     template: '%s | Carlos\' Dashboard',
     default: 'Carlos\' Dashboard',
   },
-  description: 'The official Next.js based website for Carlos Toledo\'s experiences and projects.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh/'),
+  description: 'Carlos Toledo\'s website based on Next.js for his experiences and projects.',
 };
 
 export default function RootLayout({
@@ -18,7 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
       <body className={`${inconsolata.className} antialiased`}>{children}</body>
     </html>
   );

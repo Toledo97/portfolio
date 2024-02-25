@@ -2,27 +2,27 @@ const certificatesBundle = [
   {
     title: "IBM",
     collection: [
-      {alt: "Web Development", src: "web-dev.png", w:175, h:0, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},
-      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:175, h:0, issued: 'August 1, 2022', verify: 'https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile'},
-      {alt: "Professional Skills", src: "wps.png", w:175, h:0, issued: 'June 27, 2022', verify: 'https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile'},
+      {alt: "Web Development", src: "web-dev.png", w:200, h:200, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},
+      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:200, h:200, issued: 'August 1, 2022', verify: 'https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile'},
+      {alt: "Professional Skills", src: "wps.png", w:200, h:200, issued: 'June 27, 2022', verify: 'https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile'},
     ]
   },
   {
     title: "Coursera",
     collection: [
-      {alt: "IBM Databases w/ Python", src: "DSQL.png", w:350, h:0, issued: 'June 10, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course'},
-      {alt: "Databases w/ Python", src: "DBP.png", w:350, h:0, issued: 'May 29, 2021', verify: 'https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c'},
-      {alt: "Python Data Structures", src: "PD.png", w:350, h:0, issued: 'May 26, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T'},
-      {alt: "Programming for Everyone", src: "4Every1.png", w:350, h:0, issued: 'May 20, 2021', verify: 'https://coursera.org/share/d796b2c9e81a591443124a662ac050e7'},
+      {alt: "IBM Databases w/ Python", src: "DSQL.png", w:350, h:271, issued: 'June 10, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course'},
+      {alt: "Databases w/ Python", src: "DBP.png", w:350, h:271, issued: 'May 29, 2021', verify: 'https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c'},
+      {alt: "Python Data Structures", src: "PD.png", w:350, h:271, issued: 'May 26, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T'},
+      {alt: "Programming for Everyone", src: "4Every1.png", w:350, h:271, issued: 'May 20, 2021', verify: 'https://coursera.org/share/d796b2c9e81a591443124a662ac050e7'},
     ]
   },
   {
     title: "Nvidia",
     collection: [
-      {alt: "AI on Jetson Nano", src: "jetsonNano.png", w:250, h:0, issued: 'September 21, 2021', verify: 'https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/'},
-      {alt: "Streams in CUDA", src: "acceleratedCUDA.png", w:350, h:0, issued: 'August 6, 2021', verify: 'https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0'},
-      {alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w:350, h:0, issued: 'August 9, 2021', verify: 'https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e'},
-      {alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w:350, h:0, issued: 'April 25, 2021', verify: 'https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f'},
+      {alt: "AI on Jetson Nano", src: "jetsonNano.png", w:250, h:292, issued: 'September 21, 2021', verify: 'https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/'},
+      {alt: "Streams in CUDA", src: "acceleratedCUDA.png", w:350, h:271, issued: 'August 6, 2021', verify: 'https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0'},
+      {alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w:350, h:271, issued: 'August 9, 2021', verify: 'https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e'},
+      {alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w:350, h:271, issued: 'April 25, 2021', verify: 'https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f'},
     ]
   },
 ]
@@ -31,35 +31,35 @@ const skillsBundle = [
   {
     title: "Frequent Languages",
     collection: [
-      {alt: "Python", src: "python.png", w:50, h:0},
+      {alt: "Python", src: "python.png", w:50, h:50},
       // {alt: "JS", src: "js2.png", w:50, h:0},
-      {alt: "TS", src: "ts.png", w:50, h:0},
-      {alt: "C/C++", src: "cplus.png", w:45, h:0},
+      {alt: "TS", src: "ts.png", w:50, h:50},
+      {alt: "C/C++", src: "cplus.png", w:45, h:51},
     ]
   },
   {
     title: "Database Experience",
     collection: [
-      {alt: "MySQL", src: "mysql.png", w:50, h:0},
-      {alt: "Mongo", src: "mongodb.png", w:50, h:0},
-      {alt: "Neo4j", src: "neo4j.png", w:50, h:40},
+      {alt: "MySQL", src: "mysql.png", w:50, h:50},
+      {alt: "Mongo", src: "mongodb.png", w:50, h:50},
+      {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
   {
     title: "Frontend Experience",
     collection: [
-      {alt: "React", src: "react.png", w:50, h:0},
-      {alt: "MUI", src: "mui.png", w:50, h:0},
-      {alt: "Bootstrap", src: "boot.png", w:45, h:0},
-      {alt: "Angular", src: "angular.png", w:45, h:0},
+      {alt: "React", src: "react.png", w:50, h:43},
+      {alt: "MUI", src: "mui.png", w:50, h:50},
+      {alt: "Bootstrap", src: "boot.png", w:45, h:45},
+      {alt: "Angular", src: "angular.png", w:45, h:48},
     ]
   },
   {
     title: "Technologies",
     collection: [
-      {alt: "Git", src: "git.png", w:45, h:0},
-      {alt: "Node.js", src: "node.png", w:45, h:0},
-      {alt: "Next.js", src: "next.png", w:45, h:0},
+      {alt: "Git", src: "git.png", w:45, h:45},
+      {alt: "Node.js", src: "node.png", w:45, h:51},
+      {alt: "Next.js", src: "next.png", w:45, h:45},
     ]
   }
 ]
@@ -147,7 +147,7 @@ const projects = [
 
 const activities = [
   {
-    imageData: {alt: "First Lego League", src: "activities/fll-logo.png", w:175, h:0}, 
+    imageData: {alt: "First Lego League", src: "activities/fll-logo.png", w:180, h:94}, 
     subTitle: "Champaign, IL",
     roles: [
       { 
@@ -165,7 +165,7 @@ const activities = [
     ]
   },
   {
-    imageData: {alt: "Expert Learning Assistant", src: "activities/physics.png", w:250, h:0}, 
+    imageData: {alt: "Expert Learning Assistant", src: "activities/physics.png", w:250, h:91}, 
     subTitle: "Urbana, IL",
     roles: [
       { 
@@ -180,7 +180,7 @@ const activities = [
     ]
   },
   {
-    imageData: {alt: "SHPE UIUC Chapter", src: "activities/shpe.png", w:175, h:0}, 
+    imageData: {alt: "SHPE UIUC Chapter", src: "activities/shpe.png", w:175, h:54}, 
     subTitle: "Urbana, IL",
     roles: [
       { 
@@ -217,7 +217,7 @@ const activities = [
 
 const companies = [
 {   
-  imageData: {alt: "Carle Health", src: "carle.png", w:135, h:0}, 
+  imageData: {alt: "Carle Health", src: "carle.png", w:135, h:36}, 
   location: "Champaign, IL",
   roles: [
   {
@@ -228,7 +228,7 @@ const companies = [
   ]
 },
 {   
-  imageData: {alt: "Motorola Solutions", src: "Motorola-Solutions.png", w:275, h:0},
+  imageData: {alt: "Motorola Solutions", src: "Motorola-Solutions.png", w:275, h:31},
   location: "Champaign, IL",
   roles: [
   {
@@ -259,7 +259,7 @@ const companies = [
   ],
 },
 {   
-  imageData: {alt: "IBM", src: "ibm.png", w:100, h:0},
+  imageData: {alt: "IBM", src: "ibm.png", w:100, h:40},
   location: "Bloomginton, IL",
   roles: [
   {

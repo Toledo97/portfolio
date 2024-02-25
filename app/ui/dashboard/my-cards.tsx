@@ -8,19 +8,25 @@ import {
 
 import { mono, inconsolata } from '@/app/ui/fonts';
 import { companies, activities, projects, skillsBundle, certificatesBundle } from '@/app/lib/data'
-import { ImageData, Role, Certificate, Entity, Project } from "@/app/lib/definitions";
+import { ImageData, Role, Skill, Entity, Project } from "@/app/lib/definitions";
+import BasicModal from '@/app/ui/dashboard/my-modal'
 
 import Image from 'next/image';
 import Link from 'next/link';
-import clsx from 'clsx';
+import * as React from 'react';
+import Modal from '@mui/material/Modal';
 
 const links = [
-    { name: 'email', href: 'mailto:ctoledo2@illinois.edu', icon: EnvelopeIcon },
+    { name: 'email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
     { name: 'personal', href: '', icon: UserIcon },
     { name: 'linkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
 ]
 
 export function ProfileCard() {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+    const MyModal = React.forwardRef(() => <BasicModal />);
 
     return (
             <div className="m-auto w-80 overflow-clip shadow rounded">
@@ -28,7 +34,8 @@ export function ProfileCard() {
                 <div className="aspect-square overflow-clip rounded-full mt-5 mb-2 mx-3">
                     <Image  
                         alt=""
-                        src="/images/me.png" className=" rounded-full"
+                        src="/images/me.png" className="h-auto w-auto rounded-full"
+                        priority
                         width={190}
                         height={0}/>
                 </div>
@@ -40,19 +47,29 @@ export function ProfileCard() {
                     <>
                         {links.map((link) => {
                             const LinkIcon = link.icon;
+                            const action = LinkIcon === UserIcon ? handleOpen : undefined;
                             // check for user and open modal on click
                             return (
                             <Link
                                 key={link.name}
+                                onClick={action}
                                 href={link.href}
-                                className={clsx(
-                                'flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3'
-                                )}>
+                                className={
+                                'flex grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3'
+                                }>
                                 <LinkIcon className="w-6" />
                             </Link>
                             );
                         })}
                         </>
+                        <Modal
+                            open={open}
+                            onClose={handleClose}
+                            aria-labelledby="modal-modal-title"
+                            aria-describedby="modal-modal-description"
+                            >
+                            <MyModal/>
+                        </Modal>
                     </div>
                 </div>
         </div>
@@ -62,16 +79,16 @@ export function ProfileCard() {
 export function ProjectsCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3" >
-            {projects.map((item:Project, idxj:number) => {
-                return(ProjectsCard(item, idxj));
+            {projects.map((item:Project) => {
+                return(ProjectsCard(item));
             })}
         </div>
     );
 }
 
-function ProjectsCard(item:Project, idxj:number) {
+function ProjectsCard(item:Project) {
     return(
-        <div className="m-auto w-full overflow-clip shadow rounded p-6 "  key={idxj}>
+        <div className="m-auto w-full overflow-clip shadow rounded p-6 "  key={item.title}>
             <div className="relative flex pb-3 flex-col align-left gap-3">
                 <div className="z-10 flex flex-row grid grid-cols-2">
                     <h1 className={`${mono.className} text-left text-xl mx-4 `}>{item.title}</h1>  
@@ -94,7 +111,11 @@ export function ActivitiesCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3" >
             {activities.map((item:Entity, idxj:number) => {
-                return(CompanyCard(item.imageData, item.roles, item.subTitle, idxj));
+                return(
+                    <div key={idxj}>
+                        {CompanyCard(item.imageData, item.roles, item.subTitle)}
+                    </div>
+                );
             })}
         </div>
     );
@@ -103,41 +124,47 @@ export function ActivitiesCardGrid(){
 export function CompanyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3" >
-            {companies.map((item:Entity, idxj:number) => {
-                return(CompanyCard(item.imageData, item.roles, item.location, idxj));
+            {companies.map((item:Entity) => {
+                return(
+                    <div key={item.imageData.alt}>
+                        {CompanyCard(item.imageData, item.roles, item.location)}
+                    </div>
+                    );
             })}
         </div>
     );
 }  
 
-function CompanyCard(imageData:ImageData, roles:Role[], location:string, idxj:number){
+function CompanyCard(imageData:ImageData, roles:Role[], location:string){
     return (
-        <div className="m-auto w-full overflow-clip shadow rounded p-6 "  key={idxj}>
-            <div className="relative flex pb-3 flex-col align-left gap-3">
+        <div className="m-auto w-full overflow-clip shadow rounded p-6 " >
+            <div className="relative flex pb-3 flex-col align-left gap-3" >
             <div className="z-10 flex flex-row grid grid-cols-2">
                     <Image
                     alt={imageData.alt}
                     src={`/images/` + imageData.src} 
                     width={imageData.w}
                     height={imageData.h}
+                    priority
                     />
                 <h1 className={`${mono.className} text-right mx-4`}>{location}</h1>
             </div>
-            {roles.map((role:Role, idxk:number) => {
+            {roles.map((role:Role, idx:number) => {
                 return(
-                    <div className="z-10 flex flex-col" key={idxk}>
-                        <div className="z-10 flex flex-row grid grid-cols-2">
-                            <div>
-                                <h1 className={`${mono.className} text-left	text-xl inline-block`}>{role.title}</h1>
+                        <div className="z-10 flex flex-col" key={idx}>
+                            <div className="z-10 flex flex-row grid grid-cols-2">
+                                <div>
+                                    <h1 className={`${mono.className} text-left	text-xl inline-block`}>{role.title}</h1>
+                                </div>
+                                <div>
+                                    <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>
+                                </div>
                             </div>
-                            <div>
-                                <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>
-                            </div>
+                                {role.description.map((point:string,idx:number) => {
+                                    return (<li key={`${role.timeline}-${idx}`} className={`px-5`}>{point}</li> ); 
+                                })}
                         </div>
-                            {role.description.map((point:string,idx:number) => {
-                                return (<><li key={idx} className={`px-5`}>{point}</li> </>); 
-                            })}
-                    </div>
+
                 );
             })}               
             </div>
@@ -148,8 +175,12 @@ function CompanyCard(imageData:ImageData, roles:Role[], location:string, idxj:nu
 export function CertificateyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3 w-full" >  
-            {certificatesBundle.map((item:Certificate) => {    
-                return (CertificateCard(item.title,item.collection));
+            {certificatesBundle.map((item:Skill,idx:number) => {    
+                return (
+                    <div key={idx}>
+                        {CertificateCard(item.title,item.collection)}
+                    </div>
+                    );
             })}           
         </div>
     );
@@ -158,7 +189,7 @@ export function CertificateyCardGrid(){
 function CertificateCard(title:string, collection:ImageData[]){
     
     return (
-        <div className="m-auto w-full shadow rounded p-6 ">
+        <div className="m-auto w-full shadow rounded p-6 " key={title}>
             <h1 className={`${inconsolata.className} text-left text-2xl`}>{title}</h1>
                 <div className="m-auto w-full flex flex-row overflow-x-auto rounded p-6 gap-6">
                     {collection.map((item:ImageData, idx:number) => {
@@ -172,15 +203,18 @@ function CertificateCard(title:string, collection:ImageData[]){
                                             src={`/images/verify.png`}
                                             width={30}
                                             height={25}
-                                            className='absolute -right-3 -top-3'
+                                            className='absolute -right-3 -top-3 h-auto w-auto'
                                             alt='verify-icon'
+                                            priority
                                         />
                                     </Link>
                                         <Image
                                             alt={item.alt}
                                             src={`/images/certificates/` + item.src} 
                                             width={item.w}
-                                            height={item.h}/>
+                                            height={item.h}
+                                            priority
+                                            />
                                 </div>
                                 <p>{item.issued}</p>
                             </div>
@@ -194,8 +228,12 @@ function CertificateCard(title:string, collection:ImageData[]){
 
 export function SkillCards() {
     return(
-        skillsBundle.map((item) =>{
-            return(CardTempl(item.title,item.collection));
+        skillsBundle.map((item:Skill, idx:number) =>{
+            return(
+                <div key={idx}>
+                    {CardTempl(item.title,item.collection)}
+                </div>
+            );
         })
     );
     
@@ -209,15 +247,13 @@ function CardTempl(title:string, images: ImageData[]) {
             <div className=" relative flex p-3 w-full flex-col items-center justify-center">
                 <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4 flex-wrap">
                     <>
-                        {images.map((item) => {
+                        {images.map((item,idx) => {
                             return (
                                 <Image
-                                key={item.alt}
+                                key={idx}
                                 alt={item.alt}
                                 src={`/images/skill-icons/` + item.src} 
-                                className={clsx(
-                                    'flex items-center justify-center rounded-md text-sm font-medium md:flex-none md:justify-start'
-                                    )}
+                                priority
                                 width={item.w}
                                 height={item.h}
                                 />

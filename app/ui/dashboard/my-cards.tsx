@@ -27,6 +27,7 @@ export function ProfileCard() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const MyModal = React.forwardRef(() => <BasicModal />);
+    MyModal.displayName = 'Contact Modal'
 
     return (
             <div className="m-auto w-80 overflow-clip shadow rounded">

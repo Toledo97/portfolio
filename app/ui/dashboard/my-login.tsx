@@ -1,26 +1,26 @@
 'use client';
 
-import {use, useState} from 'react';
-import {auth, provider} from '@/firebase.config';
+import { use, useState } from 'react';
+import { auth, provider } from '@/firebase.config';
 import { signInWithPopup } from 'firebase/auth';
 
 export default function LoggingIn() 
 {
   const [user, setUser] = useState(null);
   const [uid, setUID] = useState(null);
-
-  let loggedIn:string;
-  let userID:string;
+  console.log("size ", uid.length);
+  // let loggedIn:string;
+  // let userID:string;
 
   // if (typeof window !== undefined){
   //   loggedIn = window.sessionStorage.getItem('user');
   //   userID = window.sessionStorage.getItem('uid');
   // }
 
-  if (!user && loggedIn){
-    setUser(loggedIn);
-    setUID(userID);
-  }
+  // if (!user && loggedIn){
+  //   setUser(loggedIn);
+  //   setUID(userID);
+  // }
 
   const handleGithubLogin=()=>{
     signInWithPopup(auth, provider).then((result)=>{
@@ -56,9 +56,7 @@ export default function LoggingIn()
                 </button>
                 
                 <h3>Welcome {user}</h3>
-                <div className='photo'>
-                  {/* <img src={user.photoURL} alt="dp" referrerPolicy='no-referrer'/> */}
-                </div>
+                
                 </>
             ):(
               // otherwise show a button to login user with github

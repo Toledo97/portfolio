@@ -10,6 +10,7 @@ import { mono, inconsolata } from '@/app/ui/fonts';
 import { companies, activities, projects, skillsBundle, certificatesBundle } from '@/app/lib/data'
 import { ImageData, Role, Skill, Entity, Project } from "@/app/lib/definitions";
 import BasicModal from '@/app/ui/dashboard/my-modal'
+import Fade from '@mui/material/Fade';
 
 import Image from 'next/image';
 import Link from 'next/link';

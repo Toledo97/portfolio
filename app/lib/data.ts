@@ -32,7 +32,6 @@ const skillsBundle = [
     title: "Frequent Languages",
     collection: [
       {alt: "Python", src: "python.png", w:50, h:50},
-      // {alt: "JS", src: "js2.png", w:50, h:0},
       {alt: "TS", src: "ts.png", w:50, h:50},
       {alt: "C/C++", src: "cplus.png", w:45, h:51},
     ]
@@ -48,7 +47,7 @@ const skillsBundle = [
   {
     title: "Frontend Experience",
     collection: [
-      {alt: "React", src: "react.png", w:50, h:43},
+      {alt: "React", src: "react.png", w:50, h:44},
       {alt: "MUI", src: "mui.png", w:50, h:50},
       {alt: "Bootstrap", src: "boot.png", w:45, h:45},
       {alt: "Angular", src: "angular.png", w:45, h:48},

@@ -38,5 +38,5 @@ export type Signature = {
   username: string;
   platform: string;
   message: string;
-  date: Date;
+  date: string;
 }

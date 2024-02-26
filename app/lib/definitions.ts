@@ -33,3 +33,10 @@ export type Project = {
   description: string[];
 }
 
+export type Signature = {
+  userID: string;
+  username: string;
+  platform: string;
+  message: string;
+  date: string;
+}

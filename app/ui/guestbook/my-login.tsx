@@ -8,19 +8,6 @@ export default function LoggingIn()
 {
   const [user, setUser] = useState(null);
   const [uid, setUID] = useState(null);
-  console.log("size ", uid.length);
-  // let loggedIn:string;
-  // let userID:string;
-
-  // if (typeof window !== undefined){
-  //   loggedIn = window.sessionStorage.getItem('user');
-  //   userID = window.sessionStorage.getItem('uid');
-  // }
-
-  // if (!user && loggedIn){
-  //   setUser(loggedIn);
-  //   setUID(userID);
-  // }
 
   const handleGithubLogin=()=>{
     signInWithPopup(auth, provider).then((result)=>{
@@ -29,10 +16,7 @@ export default function LoggingIn()
           setUser(result.user.displayName),
           setUID(result.user.uid),
         ]);
-        // if (typeof window !== undefined){
-        //   window.sessionStorage.setItem('user',result.user.displayName);
-        //   window.sessionStorage.setItem('uid',result.user.uid);
-        // }
+
     }).catch((err)=>{
       console.log(err);
     })
@@ -40,8 +24,6 @@ export default function LoggingIn()
 
   const handleLogout=()=>{
     setUser(null);
-    // if (typeof window !== undefined){
-    //   window.sessionStorage.clear();}
   }
 
   return (
@@ -54,9 +36,7 @@ export default function LoggingIn()
                   onClick={handleLogout}>
                   LOGOUT
                 </button>
-                
                 <h3>Welcome {user}</h3>
-                
                 </>
             ):(
               // otherwise show a button to login user with github

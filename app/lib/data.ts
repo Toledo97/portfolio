@@ -95,7 +95,7 @@ const projects = [
   {
     title: 'GPU Convolution Kernel Optimizations',
     subTitle: `Optimized a forward-pass of a convolutional 
-    layer using CUDA and profiling tools like Nsight Systems and Nsight-Compute.`,
+    layer using CUDA.`,
     location: 'Champaign, IL',
     timeline: 'Nov 2022 - Dec 2022',
     description: [

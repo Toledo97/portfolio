@@ -14,7 +14,7 @@ const FormSchema = z.object({
     date: z.string()
   });
    
-  const CreateSignature = FormSchema.omit({date: true  });
+const CreateSignature = FormSchema.omit({ date: true });
 
 export async function createSignature(signature:Signature) {
     const { user_id, username, platform, message } = CreateSignature.parse({
@@ -22,7 +22,6 @@ export async function createSignature(signature:Signature) {
         username: signature.username,
         platform: signature.platform,
         message: signature.message,
-        date: signature.date,
       });
     const date = new Date().toISOString();
     
@@ -32,5 +31,26 @@ export async function createSignature(signature:Signature) {
 
     revalidatePath('/dashboard/guestbook');
     redirect('/dashboard/guestbook');
+}
 
+export async function updateSignature(signature:Signature) {
+  const { user_id, message } = CreateSignature.parse({
+      user_id: signature.userID,
+      message: signature.message,
+      date: signature.date,
+    });
+  const date = new Date().toISOString();
+  
+  await sql`
+    UPDATE signatures
+    SET message = ${message}, date = ${date}
+    WHERE id = ${user_id}
+  `;
+
+  revalidatePath('/dashboard/guestbook');
+  redirect('/dashboard/guestbook');
+}
+
+export async function checkSignature(userID:string) {
+  
 }

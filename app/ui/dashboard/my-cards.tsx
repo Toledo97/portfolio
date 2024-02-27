@@ -96,7 +96,10 @@ function ProjectsCard(item:Project) {
                     <h1 className={`${mono.className} text-right mx-4`}>{item.location}</h1>
 
                 </div>
-                <h1 className={`${inconsolata.className} text-left mx-4 text-xl`}>{item.subTitle}</h1>  
+                <div className="z-10 flex flex-row grid grid-cols-2">
+                    <h1 className={`${inconsolata.className} text-left mx-4 text-xl`}>{item.subTitle}</h1>  
+                    <h2 className={`${inconsolata.className} mx-4 text-right `}>{item.timeline}</h2>
+                </div>
 
                 {item.description.map((point:string, idxk:number) => {
                     return(

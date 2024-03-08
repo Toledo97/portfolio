@@ -27,8 +27,6 @@ export default function BasicModal () {
           </div>
         </Typography>
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-
-
           <p className={"indent-5"}>
             I am a first generation college graduate with a BS in Computer Engineering. I am of Mexican and Puerto Rican descent and I was born and raised in Elgin, Illinois.
             Professionally, my interests align with Full Stack Development and even more so Backend Development. I enjoy a challenge with a meaningful impact, I want my work to help people.

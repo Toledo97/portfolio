@@ -29,8 +29,8 @@ export async function createSignature(signature:Signature) {
     INSERT INTO signatures (user_id, username, message, platform, date)
     VALUES (${user_id}, ${username}, ${message}, ${platform}, ${date})`
 
-    revalidatePath('/dashboard/guestbook');
-    redirect('/dashboard/guestbook');
+    // revalidatePath('/dashboard/guestbook');
+    // redirect('/dashboard/guestbook');
 }
 
 export async function updateSignature(signature:Signature) {
@@ -44,13 +44,20 @@ export async function updateSignature(signature:Signature) {
   await sql`
     UPDATE signatures
     SET message = ${message}, date = ${date}
-    WHERE id = ${user_id}
+    WHERE user_id = ${user_id}
   `;
 
-  revalidatePath('/dashboard/guestbook');
-  redirect('/dashboard/guestbook');
+  // revalidatePath('/dashboard/guestbook');
+  // redirect('/dashboard/guestbook');
 }
 
-export async function checkSignature(userID:string) {
-  
+export async function checkSignature(user_id:string) {
+  let entry = await sql`
+    SELECT signatures 
+    WHERE user_id = ${user_id}
+   `;
+
+   return entry ?
+
+
 }

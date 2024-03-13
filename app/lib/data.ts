@@ -216,7 +216,7 @@ const activities = [
 
 const companies = [
 {   
-  imageData: {alt: "Carle Health", src: "carle.png", w:135, h:36}, 
+  imageData: {alt: "Health Alliance", src: "HA.png", w:140, h:38}, 
   location: "Champaign, IL",
   roles: [
   {
@@ -277,4 +277,12 @@ const companies = [
 },
 ]
 
-export { companies, activities, projects, certificatesBundle, skillsBundle};
+
+const randomLinks = [
+  {name: "Style Guide for Python" , link:"https://peps.python.org/pep-0008/"},
+  {name: "Git Cheatsheet" , link:"https://ndpsoftware.com/git-cheatsheet.html#loc=index;"},
+  {name: "Authenticate Using GitHub" , link:"https://firebase.google.com/docs/auth/web/github-auth"},
+  {name: "Vercel Documentation" , link:"https://vercel.com/docs"},
+]
+
+export { companies, activities, projects, certificatesBundle, skillsBundle, randomLinks };

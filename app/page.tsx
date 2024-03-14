@@ -20,18 +20,19 @@ export default function Page() {
       </div>
 
       
-      <div className="flex flex-wrap lg:p-12 p-6 w-full">
+      <div className="flex lg:p-12 p-6 w-full">
         <div className="flex flex-row grow flex-wrap justify-center gap-4 bg-gray-50 shadow p-6 ">
-        
 
+        <div className="m-auto overflow-clip shadow p-4 rounded bg-gray-100">
+        <div className="relative flex w-full flex-col">
+            Welcome to my Personal Website! My name is Carlos Antonio Toledo Jr and I am an UIUC 2023 Alum with a BS in Computer Engineering.
+        </div></div>
 
-        <ResistorFrom title={formTitle} />
         <LinkCard title={linkTitle} />
-
+        <ResistorFrom title={formTitle} />
+        
         </div>
       </div>
-
-
     </main>
   );
 }

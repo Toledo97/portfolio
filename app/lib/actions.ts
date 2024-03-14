@@ -51,13 +51,13 @@ export async function updateSignature(signature:Signature) {
   // redirect('/dashboard/guestbook');
 }
 
-export async function checkSignature(user_id:string) {
-  let entry = await sql`
-    SELECT signatures 
-    WHERE user_id = ${user_id}
-   `;
+// export async function checkSignature(user_id:string) {
+//   let entry = await sql`
+//     SELECT signatures 
+//     WHERE user_id = ${user_id}
+//    `;
 
-   return entry ?
+//    return entry ?
 
 
-}
+// }

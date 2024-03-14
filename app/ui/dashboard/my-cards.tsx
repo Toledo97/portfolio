@@ -277,7 +277,7 @@ export function LinkCard(props: LinkCardProps){
         <div className="m-auto overflow-clip shadow p-4 rounded bg-gray-100">
             <h1 className={`${mono.className}  mx-3`}>{props.title}</h1>
     
-            <div className=" relative flex p-3 w-full flex-col">
+            <div className="relative flex p-3 w-full flex-col">
                 <div className=" z-10 flex flex-col flex-wrap gap-4 flex-wrap">
                     <>
                         {

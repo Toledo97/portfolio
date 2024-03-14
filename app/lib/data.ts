@@ -222,7 +222,13 @@ const companies = [
   {
       title:"Sys-Ops & Care Mgmt Analyst", 
       timeline: "Feb 2024 - Current",
-      description: [],
+      description: [
+      `Implementing innovative strategies, including scripting, to streamline workflow and technical processes. 
+      This involves creating automated tools to enhance the importation of auditing data and improve overall system functionality.`,
+      `Utilized SQL expertise to modify queries, enabling comprehensive auditing of case data, 
+      thereby ensuring accuracy and compliance with regulatory standards.`,
+      `Effectively articulate complex technical concepts and project accomplishments in a clear and meaningful manner, 
+      fostering effective communication and alignment across the organization.`],
   }
   ]
 },

@@ -8,7 +8,6 @@ import Select from '@mui/material/Select';
 import { FormProps } from "@/app/lib/definitions";
 import { mono, inconsolata } from '@/app/ui/fonts';
 import Brightness1Icon from '@mui/icons-material/Brightness1';
-import { spacing } from '@mui/system';
 
 const bands = [
     ["Black", 0], ["Brown", 1], ["Red", 2],

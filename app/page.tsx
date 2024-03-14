@@ -22,6 +22,9 @@ export default function Page() {
       
       <div className="flex flex-wrap lg:p-12 p-6 w-full">
         <div className="flex flex-row grow flex-wrap justify-center gap-4 bg-gray-50 shadow p-6 ">
+        
+
+
         <ResistorFrom title={formTitle} />
         <LinkCard title={linkTitle} />
 

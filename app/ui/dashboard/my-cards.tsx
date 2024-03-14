@@ -16,10 +16,6 @@ import Link from 'next/link';
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 
 const links = [
     { name: 'email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
@@ -278,7 +274,7 @@ function CardTempl(title:string, images: ImageData[]) {
 
 export function LinkCard(props: LinkCardProps){
     return (            
-        <div className="m-auto overflow-clip shadow rounded ">
+        <div className="m-auto overflow-clip shadow rounded bg-gray-100">
             <h1 className={`${mono.className} mt-3 mx-3`}>{props.title}</h1>
     
             <div className=" relative flex p-3 w-full flex-col">
@@ -300,49 +296,3 @@ export function LinkCard(props: LinkCardProps){
         );
 }
 
-export function ResistorFrom(props: FormProps){
-    const [checked, setCheck] = React.useState(false);
-    const handleChecked = () => checked ? setCheck(false)  : setCheck(true) ;
-    return(
-        <div className="m-auto overflow-clip shadow rounded ">
-            <h1 className={`${mono.className} mt-3 mx-3`}>{props.title}</h1>
-    
-            <div className=" relative flex p-3 w-full flex-col">
-                <div className=" z-10 flex flex-col flex-wrap gap-4 flex-wrap">
-                <form className="flex flex-col gap-4">
-
-                    <label>
-                        <input type="checkbox" onChange={handleChecked}/> 5-Band Resistor
-                    </label>
-
-                    { DropDown("First Band") }
-                    { DropDown("Second Band") }
-                    { checked ? (DropDown("Third Band")) : (<></>) }
-                    { DropDown("Multiplier") }
-                    { DropDown("Tolerance") }
-                    
-                    
-                    
-                    <input type="submit" value="Submit" />
-                    </form>
-                </div>
-            </div>
-        </div>
-        );
-}
-
-function DropDown (title:String) {
-    const [color, setColor] = React.useState('');
-
-    const handleChange = (event) => {
-        setColor(event.target.value);
-    };
-
-    return (
-        <>
-            <label>
-                
-            </label>
-        </>
-    )
-}

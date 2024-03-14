@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import SideNav from '@/app/ui/dashboard/sidenav';
-import { LinkCard, ResistorFrom } from '@/app/ui/dashboard/my-cards';
+import { LinkCard } from '@/app/ui/dashboard/my-cards';
+import { ResistorFrom } from '@/app/ui/dashboard/my-form';
 
 export const metadata: Metadata = {
   title: 'Landing Page',
@@ -19,12 +20,11 @@ export default function Page() {
       </div>
 
       
-      <div className="flex flex-wrap lg:p-12  p-6">
-        <div className="flex flex-row grow flex-wrap justify-center gap-4 bg-gray-50 shadow bg-gray-50 p-6 ">
+      <div className="flex flex-wrap lg:p-12 p-6 w-full">
+        <div className="flex flex-row grow flex-wrap justify-center gap-4 bg-gray-50 shadow p-6 ">
         <ResistorFrom title={formTitle} />
         <LinkCard title={linkTitle} />
-        <LinkCard title={linkTitle} />
-        <LinkCard title={linkTitle} />
+
         </div>
       </div>
 

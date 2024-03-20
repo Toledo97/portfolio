@@ -15,12 +15,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
+import Tooltip from '@mui/material/Tooltip';
 
 
 const links = [
-    { name: 'email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
+    { name: 'Email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
     // { name: 'personal', href: '', icon: UserIcon },
-    { name: 'linkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
 ]
 
 export function ProfileCard() {
@@ -52,6 +53,9 @@ export function ProfileCard() {
                             const action = LinkIcon === UserIcon ? handleOpen : undefined;
                             // check for user and open modal on click
                             return (
+
+                            <Tooltip title={link.name}>
+
                             <Link
                                 key={link.name}
                                 onClick={action}
@@ -61,6 +65,8 @@ export function ProfileCard() {
                                 }>
                                 <LinkIcon className="w-6" />
                             </Link>
+                            </Tooltip>
+
                             );
                         })}
                         </>

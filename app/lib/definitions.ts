@@ -40,3 +40,11 @@ export type Signature = {
   message: string;
   date: string;
 }
+
+export interface LinkCardProps {
+  title: string;
+}
+
+export interface FormProps {
+  title: string;
+}

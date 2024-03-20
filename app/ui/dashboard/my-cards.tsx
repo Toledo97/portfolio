@@ -7,8 +7,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 import { mono, inconsolata } from '@/app/ui/fonts';
-import { companies, activities, projects, skillsBundle, certificatesBundle } from '@/app/lib/data'
-import { ImageData, Role, Skill, Entity, Project } from "@/app/lib/definitions";
+import { companies, activities, projects, skillsBundle, certificatesBundle, randomLinks } from '@/app/lib/data'
+import { ImageData, Role, Skill, Entity, Project, LinkCardProps, FormProps } from "@/app/lib/definitions";
 import BasicModal from '@/app/ui/dashboard/my-modal'
 
 import Image from 'next/image';
@@ -16,9 +16,10 @@ import Link from 'next/link';
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 
+
 const links = [
     { name: 'email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
-    { name: 'personal', href: '', icon: UserIcon },
+    // { name: 'personal', href: '', icon: UserIcon },
     { name: 'linkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
 ]
 
@@ -96,7 +97,10 @@ function ProjectsCard(item:Project) {
                     <h1 className={`${mono.className} text-right mx-4`}>{item.location}</h1>
 
                 </div>
-                <h1 className={`${inconsolata.className} text-left mx-4 text-xl`}>{item.subTitle}</h1>  
+                <div className="z-10 flex flex-row grid grid-cols-2">
+                    <h1 className={`${inconsolata.className} text-left mx-4 text-xl`}>{item.subTitle}</h1>  
+                    <h2 className={`${inconsolata.className} mx-4 text-right `}>{item.timeline}</h2>
+                </div>
 
                 {item.description.map((point:string, idxk:number) => {
                     return(
@@ -245,7 +249,7 @@ function CardTempl(title:string, images: ImageData[]) {
         <div className="m-auto overflow-clip shadow rounded ">
             <h1 className={`${mono.className} mt-3 mx-3`}>{title}</h1>
     
-            <div className=" relative flex p-3 w-full flex-col items-center justify-center">
+            <div className=" relative flex p-3 w-full flex-col">
                 <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4 flex-wrap">
                     <>
                         {images.map((item,idx) => {
@@ -267,3 +271,28 @@ function CardTempl(title:string, images: ImageData[]) {
         </div>
         );
 }
+
+export function LinkCard(props: LinkCardProps){
+    return (            
+        <div className="m-auto overflow-clip shadow p-4 rounded bg-gray-100">
+            <h1 className={`${mono.className}  mx-3`}>{props.title}</h1>
+    
+            <div className="relative flex p-3 w-full flex-col">
+                <div className=" z-10 flex flex-col flex-wrap gap-4 flex-wrap">
+                    <>
+                        {
+                            randomLinks.map((item,idx) => {
+                                return (<li key={`${item.name}-${idx}`} className={`px-5`}>
+                                        <a href={item.link}>
+                                            {item.name}
+                                        </a>
+                                    </li> ); 
+                            })
+                        }
+                    </>
+                </div>
+            </div>
+        </div>
+        );
+}
+

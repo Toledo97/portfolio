@@ -95,7 +95,7 @@ const projects = [
   {
     title: 'GPU Convolution Kernel Optimizations',
     subTitle: `Optimized a forward-pass of a convolutional 
-    layer using CUDA and profiling tools like Nsight Systems and Nsight-Compute.`,
+    layer using CUDA.`,
     location: 'Champaign, IL',
     timeline: 'Nov 2022 - Dec 2022',
     description: [
@@ -216,13 +216,19 @@ const activities = [
 
 const companies = [
 {   
-  imageData: {alt: "Carle Health", src: "carle.png", w:135, h:36}, 
+  imageData: {alt: "Health Alliance", src: "HA.png", w:140, h:38}, 
   location: "Champaign, IL",
   roles: [
   {
       title:"Sys-Ops & Care Mgmt Analyst", 
       timeline: "Feb 2024 - Current",
-      description: [],
+      description: [
+      `Implementing innovative strategies, including scripting, to streamline workflow and technical processes. 
+      This involves creating automated tools to enhance the importation of auditing data and improve overall system functionality.`,
+      `Utilized SQL expertise to modify queries, enabling comprehensive auditing of case data, 
+      thereby ensuring accuracy and compliance with regulatory standards.`,
+      `Effectively articulate complex technical concepts and project accomplishments in a clear and meaningful manner, 
+      fostering effective communication and alignment across the organization.`],
   }
   ]
 },
@@ -277,4 +283,12 @@ const companies = [
 },
 ]
 
-export { companies, activities, projects, certificatesBundle, skillsBundle};
+
+const randomLinks = [
+  {name: "Style Guide for Python" , link:"https://peps.python.org/pep-0008/"},
+  {name: "Git Cheatsheet" , link:"https://ndpsoftware.com/git-cheatsheet.html#loc=index;"},
+  {name: "Authenticate Using GitHub" , link:"https://firebase.google.com/docs/auth/web/github-auth"},
+  {name: "Vercel Documentation" , link:"https://vercel.com/docs"},
+]
+
+export { companies, activities, projects, certificatesBundle, skillsBundle, randomLinks };

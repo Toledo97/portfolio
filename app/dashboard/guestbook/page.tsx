@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { mono } from '@/app/ui/fonts';
-import LoggingIn from '@/app/ui/dashboard/my-login';
+import LoggingIn from '@/app/ui/guestbook/my-login';
 
 export const metadata: Metadata = {
   title: 'Guestbook',

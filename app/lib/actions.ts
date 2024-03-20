@@ -6,6 +6,8 @@ import { revalidatePath } from 'next/cache';
 import { Signature } from "@/app/lib/definitions";
 import { redirect } from 'next/navigation';
 
+
+
 const FormSchema = z.object({
     user_id: z.string(),
     username: z.string(),
@@ -14,7 +16,7 @@ const FormSchema = z.object({
     date: z.string()
   });
    
-  const CreateSignature = FormSchema.omit({date: true  });
+const CreateSignature = FormSchema.omit({ date: true });
 
 export async function createSignature(signature:Signature) {
     const { user_id, username, platform, message } = CreateSignature.parse({
@@ -22,7 +24,6 @@ export async function createSignature(signature:Signature) {
         username: signature.username,
         platform: signature.platform,
         message: signature.message,
-        date: signature.date,
       });
     const date = new Date().toISOString();
     
@@ -30,7 +31,35 @@ export async function createSignature(signature:Signature) {
     INSERT INTO signatures (user_id, username, message, platform, date)
     VALUES (${user_id}, ${username}, ${message}, ${platform}, ${date})`
 
-    revalidatePath('/dashboard/guestbook');
-    redirect('/dashboard/guestbook');
-
+    // revalidatePath('/dashboard/guestbook');
+    // redirect('/dashboard/guestbook');
 }
+
+export async function updateSignature(signature:Signature) {
+  const { user_id, message } = CreateSignature.parse({
+      user_id: signature.userID,
+      message: signature.message,
+      date: signature.date,
+    });
+  const date = new Date().toISOString();
+  
+  await sql`
+    UPDATE signatures
+    SET message = ${message}, date = ${date}
+    WHERE user_id = ${user_id}
+  `;
+
+  // revalidatePath('/dashboard/guestbook');
+  // redirect('/dashboard/guestbook');
+}
+
+// export async function checkSignature(user_id:string) {
+//   let entry = await sql`
+//     SELECT signatures 
+//     WHERE user_id = ${user_id}
+//    `;
+
+//    return entry ?
+
+
+// }

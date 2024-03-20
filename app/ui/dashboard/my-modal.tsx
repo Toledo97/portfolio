@@ -9,7 +9,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 666,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -20,12 +20,22 @@ export default function BasicModal () {
   return (
     <div>
   
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Contact Info and More!
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            <b>email: </b>toledojr7@hotmail.com
+      <Box sx={style}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+          <div className='text-center'>
+            <b>Conact Me! </b><hr></hr>
+          </div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <b>
+            Professional Email:
+          </b>
+          {' toledojr7@hotmail.com'}
+          <br></br>
+          <b>
+            Personal Email:
+          </b>
+          {' toledojr7@gmail.com'}
           </Typography>
         </Box>
     </div>

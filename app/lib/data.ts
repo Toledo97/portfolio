@@ -74,8 +74,7 @@ const projects = [
         a React framework, to enhance user experience and optimize performance.`,
       `Designing and implementing reusable React components to ensure consistency 
         and maintainability across the application.`,
-      `Integrating CRUD functionality with Github authorization to allow users to 
-        create, edit, and delete messages in my guestbook.`
+      `Implemented a scalable architecture allowing for easy expansion and maintenance of the website.`
     ]
   },
   {

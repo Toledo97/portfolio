@@ -216,7 +216,7 @@ const activities = [
 
 const companies = [
 {   
-  imageData: {alt: "Health Alliance", src: "HA.png", w:140, h:38}, 
+  imageData: {alt: "Health Alliance", src: "ha.png", w:140, h:38}, 
   location: "Champaign, IL",
   roles: [
   {

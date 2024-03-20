@@ -19,7 +19,7 @@ import Modal from '@mui/material/Modal';
 
 const links = [
     { name: 'email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
-    { name: 'personal', href: '', icon: UserIcon },
+    // { name: 'personal', href: '', icon: UserIcon },
     { name: 'linkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
 ]
 

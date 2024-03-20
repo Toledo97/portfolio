@@ -9,6 +9,15 @@ import { FormProps } from "@/app/lib/definitions";
 import { mono, inconsolata } from '@/app/ui/fonts';
 import Brightness1Icon from '@mui/icons-material/Brightness1';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Typography from '@mui/material/Typography';
+
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
+
 const bands = [
     ["Black", 0], ["Brown", 1], ["Red", 2],
     ["Orange", 3], ["Yellow", 4], ["Green", 5],
@@ -29,7 +38,27 @@ const tolerance = [
     ["Gold", "5%"], ["Silver", "10%"],
 ]
 
-export function ResistorFrom(props: FormProps){
+export function AccordionExpandDefault(props: FormProps) {
+    return (
+    <div>
+        <Accordion defaultExpanded>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography>{props.title}</Typography>
+          </AccordionSummary>
+          
+            <ResistorFrom/>
+          
+        </Accordion>
+    </div>
+  );
+}
+
+function ResistorFrom(){
+
     const [checked, setCheck] = React.useState(false);
     const [color1, setColor1] = React.useState('');
     const [color2, setColor2] = React.useState('');
@@ -43,9 +72,7 @@ export function ResistorFrom(props: FormProps){
     }
 
     return(
-        <div className="m-auto overflow-clip shadow rounded p-4 bg-gray-100">
-            <h1 className={`${mono.className} mx-3 mb-2`}>{props.title}</h1>
-    
+        <div className="m-auto overflow-clip shadow rounded p-4 bg-gray-100">    
             <div className=" relative flex w-full flex-col">
                 <div className=" z-10 flex flex-col flex-wrap flex-wrap">
                     <form className="flex flex-col gap-2">
@@ -107,3 +134,33 @@ function DropDown (title:String, dataIn, color, setColor) {
         </div>
       );
 }
+
+
+
+export const ContactUs = () => {
+const form = useRef();
+
+const sendEmail = (e) => {
+e.preventDefault();
+// service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
+emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 
+'YOUR_PUBLIC_KEY')
+  .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+};
+
+return (
+<form ref={form} onSubmit={sendEmail}>
+  <label>Name</label>
+  <input type="text" name="user_name" />
+  <label>Email</label>
+  <input type="email" name="user_email" />
+  <label>Message</label>
+  <textarea name="message" />
+  <input type="submit" value="Send" />
+</form>
+);
+};

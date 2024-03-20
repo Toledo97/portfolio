@@ -21,7 +21,7 @@ const links = [
   { name: 'Projects', href: '/dashboard/projects', icon: BeakerIcon },
   { name: 'eLearning', href: '/dashboard/elearning', icon: AcademicCapIcon },
   { name: 'Activities', href: '/dashboard/activities', icon: ListBulletIcon },
-  { name: 'Guestbook', href: '/dashboard/guestbook', icon: BookOpenIcon }
+  // { name: 'Guestbook', href: '/dashboard/guestbook', icon: BookOpenIcon }
 ];
 
 export default function NavLinks() {

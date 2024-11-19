@@ -186,7 +186,7 @@ function CompanyCard(imageData:ImageData, roles:Role[], location:string){
 export function CertificateyCardGrid(){
     return(
         <div className="mt-2 flex flex-col gap-3 w-full" >  
-            {certificatesBundle.map((item:Skill,idx:number) => {    
+            {certificatesBundle.map((item:Skill, idx:number) => {    
                 return (
                     <div key={idx}>
                         {CertificateCard(item.title,item.collection)}
@@ -208,6 +208,8 @@ function CertificateCard(title:string, collection:ImageData[]){
                         <div className="relative flex p-3 flex-shrink-0" key={idx}> 
                             <div className="z-10 flex flex-col items-center justify-center flex-wrap">
                                 <div className="relative align-right">
+
+                                    {item.verify && 
                                     <Link
                                         href={item.verify}>
                                         <Image
@@ -218,7 +220,7 @@ function CertificateCard(title:string, collection:ImageData[]){
                                             alt='verify-icon'
                                             priority
                                         />
-                                    </Link>
+                                    </Link>}
                                         <Image
                                             alt={item.alt}
                                             src={`/images/certificates/` + item.src} 
@@ -227,6 +229,9 @@ function CertificateCard(title:string, collection:ImageData[]){
                                             priority
                                             />
                                 </div>
+                                {~item.verify && 
+                                    <p>{item.msg}</p>
+                                    }
                                 <p>{item.issued}</p>
                             </div>
                         </div>  

@@ -18,6 +18,11 @@ const config: Config = {
           600: '#2F6FEB',
         },
       },
+      spacing: {
+        '128': '32rem',
+        '112': '28rem',
+        '68': '17rem',
+      }
     },
     keyframes: {
       shimmer: {

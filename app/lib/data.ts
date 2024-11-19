@@ -1,5 +1,11 @@
 const certificatesBundle = [
   {
+    title: "Epic University",
+    collection: [
+      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:175, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
+    ]
+  },
+  {
     title: "IBM",
     collection: [
       {alt: "Web Development", src: "web-dev.png", w:200, h:200, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},

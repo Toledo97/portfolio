@@ -4,6 +4,7 @@ export type ImageData = {
   w: number;
   h: number;
   verify?: string;
+  msg?: string;
   issued?: string;
 }
 

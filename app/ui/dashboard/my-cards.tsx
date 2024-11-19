@@ -13,10 +13,10 @@ import BasicModal from '@/app/ui/dashboard/my-modal'
 
 import Image from 'next/image';
 import Link from 'next/link';
-import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import Tooltip from '@mui/material/Tooltip';
 
+import React, { useEffect } from "react";
 
 const links = [
     { name: 'Email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
@@ -30,6 +30,8 @@ export function ProfileCard() {
     const handleClose = () => setOpen(false);
     const MyModal = React.forwardRef(() => <BasicModal />);
     MyModal.displayName = 'Contact Modal'
+
+  
 
     return (
             <div className="m-auto w-80 overflow-clip shadow rounded">
@@ -49,22 +51,23 @@ export function ProfileCard() {
                     <div className='z-10 flex flex-row items-center justify-center mt-2'>
                     <>
                         {links.map((link, idx) => {
-                            const LinkIcon = link.icon;
-                            const action = LinkIcon === UserIcon ? handleOpen : undefined;
+                            const MyIcon = link.icon;
+                            // const action = MyIcon === UserIcon ? handleOpen : undefined;
                             // check for user and open modal on click
                             return (
 
                             <Tooltip title={link.name} key={idx}>
 
-                            <Link
+                            <a
                                 key={link.name}
-                                onClick={action}
+                                target="_blank"
                                 href={link.href}
+                                // onClick={() => action}
                                 className={
                                 'flex grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3'
                                 }>
-                                <LinkIcon className="w-6" />
-                            </Link>
+                                <MyIcon className="w-6" />
+                            </a>
                             </Tooltip>
 
                             );
@@ -257,22 +260,23 @@ export function SkillCards() {
 
 function CardTempl(title:string, images: ImageData[]) {
     return (            
-        <div className="m-auto overflow-clip shadow rounded ">
+        <div className="m-auto shadow rounded ">
             <h1 className={`${mono.className} mt-3 mx-3`}>{title}</h1>
     
-            <div className=" relative flex p-3 w-full flex-col">
+            <div className="relative flex p-3 w-full flex-col">
                 <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4">
                     <>
                         {images.map((item,idx) => {
                             return (
+                                <Tooltip title={item.alt} key={idx}> 
                                 <Image
-                                key={idx}
                                 alt={item.alt}
                                 src={`/images/skill-icons/` + item.src} 
                                 priority
                                 width={item.w}
                                 height={item.h}
                                 />
+                                </Tooltip>
                             );
                         })
                         }

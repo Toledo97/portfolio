@@ -2,7 +2,7 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:175, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
+      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:150, h:150, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
     ]
   },
   {
@@ -37,16 +37,16 @@ const skillsBundle = [
   {
     title: "Frequent Languages",
     collection: [
-      {alt: "Python", src: "python.png", w:50, h:50},
-      {alt: "TS", src: "ts.png", w:47, h:47},
-      {alt: "C/C++", src: "cplus.png", w:45, h:47},
+      {alt: "Python", src: "python.png", w:45, h:45},
+      {alt: "TS", src: "ts.png", w:45, h:45},
+      {alt: "C/C++", src: "cplus.png", w:45, h:45},
     ]
   },
   {
-    title: "Database Experience",
+    title: "Databases",
     collection: [
-      {alt: "MySQL", src: "mysql.png", w:50, h:50},
-      {alt: "Postgres", src: "Postgresql.png", w:50, h:50},
+      {alt: "MySQL", src: "mysql.png", w:45, h:45},
+      {alt: "Postgres", src: "Postgresql.png", w:45, h:45},
       {alt: "Mongo", src: "mongodb.png", w:50, h:50},
       // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
@@ -54,19 +54,19 @@ const skillsBundle = [
   {
     title: "Libraries",
     collection: [
-      {alt: "Pandas", src: "pandas.png", w:40, h:40},
+      {alt: "Pandas", src: "pandas.png", w:35, h:35},
       {alt: "Numpy", src: "numpy.png", w:43, h:43},
-      {alt: "MUI", src: "mui.png", w:51, h:51},
+      {alt: "MUI", src: "mui.png", w:50, h:50},
       {alt: "Bootstrap", src: "boot.png", w:45, h:45},
-      
-    ]
+    ],
+    more: true
   },
   {
     title: "Frameworks",
     collection: [
-      {alt: "React", src: "react.png", w:50, h:44},
-      {alt: "django-icon", src: "django-icon.svg", w:45, h:45},
-      {alt: "Next.js", src: "next.png", w:45, h:45},
+      {alt: "Next.js", src: "next.png", w:50, h:50},
+      {alt: "React", src: "react.png", w:50, h:50},
+      {alt: "Django", src: "django-icon.svg", w:50, h:50},
       // {alt: "Angular", src: "angular.png", w:45, h:48},
     ]
   },

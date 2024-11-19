@@ -24,6 +24,7 @@ export type Entity = {
 export type Skill = {
   title: string;
   collection: ImageData[];
+  more?: Boolean;
 }
 
 export type Project = {

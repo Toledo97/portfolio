@@ -48,13 +48,13 @@ export function ProfileCard() {
                     </div>
                     <div className='z-10 flex flex-row items-center justify-center mt-2'>
                     <>
-                        {links.map((link) => {
+                        {links.map((link, idx) => {
                             const LinkIcon = link.icon;
                             const action = LinkIcon === UserIcon ? handleOpen : undefined;
                             // check for user and open modal on click
                             return (
 
-                            <Tooltip title={link.name}>
+                            <Tooltip title={link.name} key={idx}>
 
                             <Link
                                 key={link.name}
@@ -171,7 +171,7 @@ function CompanyCard(imageData:ImageData, roles:Role[], location:string){
                                     <h2 className={`${inconsolata.className} mx-4 text-right `}>{role.timeline}</h2>
                                 </div>
                             </div>
-                                {role.description.map((point:string,idx:number) => {
+                                {role.description.map((point:string, idx:number) => {
                                     return (<li key={`${role.timeline}-${idx}`} className={`px-5`}>{point}</li> ); 
                                 })}
                         </div>

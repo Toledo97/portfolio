@@ -16,11 +16,10 @@ import Link from 'next/link';
 import Modal from '@mui/material/Modal';
 import Tooltip from '@mui/material/Tooltip';
 
-import React, { useEffect } from "react";
+import React from "react";
 
 const links = [
     { name: 'Email', href: 'mailto:toledojr7@hotmail.com', icon: EnvelopeIcon },
-    // { name: 'personal', href: '', icon: UserIcon },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/carlos-a-toledo-jr-10a998156/', icon: LinkIcon },
 ]
 
@@ -30,8 +29,6 @@ export function ProfileCard() {
     const handleClose = () => setOpen(false);
     const MyModal = React.forwardRef(() => <BasicModal />);
     MyModal.displayName = 'Contact Modal'
-
-  
 
     return (
             <div className="m-auto w-80 overflow-clip shadow rounded">
@@ -52,8 +49,6 @@ export function ProfileCard() {
                     <>
                         {links.map((link, idx) => {
                             const MyIcon = link.icon;
-                            // const action = MyIcon === UserIcon ? handleOpen : undefined;
-                            // check for user and open modal on click
                             return (
 
                             <Tooltip title={link.name} key={idx}>
@@ -62,7 +57,6 @@ export function ProfileCard() {
                                 key={link.name}
                                 target="_blank"
                                 href={link.href}
-                                // onClick={() => action}
                                 className={
                                 'flex grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3'
                                 }>
@@ -213,7 +207,7 @@ function CertificateCard(title:string, collection:ImageData[]){
                                 <div className="relative align-right">
 
                                     {item.verify && 
-                                    <Link
+                                    <a target="_blank"
                                         href={item.verify}>
                                         <Image
                                             src={`/images/verify.png`}
@@ -223,7 +217,7 @@ function CertificateCard(title:string, collection:ImageData[]){
                                             alt='verify-icon'
                                             priority
                                         />
-                                    </Link>}
+                                    </a>}
                                         <Image
                                             alt={item.alt}
                                             src={`/images/certificates/` + item.src} 

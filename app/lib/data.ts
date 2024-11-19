@@ -39,7 +39,7 @@ const skillsBundle = [
     collection: [
       {alt: "Python", src: "python.png", w:45, h:45},
       {alt: "TS", src: "ts.png", w:45, h:45},
-      {alt: "C/C++", src: "cplus.png", w:45, h:45},
+      {alt: "C/C++", src: "cplus.png", w:40, h:40},
     ]
   },
   {

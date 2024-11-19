@@ -256,7 +256,7 @@ function CardTempl(title:string, images: ImageData[]) {
             <h1 className={`${mono.className} mt-3 mx-3`}>{title}</h1>
     
             <div className=" relative flex p-3 w-full flex-col">
-                <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4 flex-wrap">
+                <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4">
                     <>
                         {images.map((item,idx) => {
                             return (

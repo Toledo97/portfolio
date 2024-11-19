@@ -32,35 +32,38 @@ const skillsBundle = [
     title: "Frequent Languages",
     collection: [
       {alt: "Python", src: "python.png", w:50, h:50},
-      {alt: "TS", src: "ts.png", w:50, h:50},
-      {alt: "C/C++", src: "cplus.png", w:45, h:51},
+      {alt: "TS", src: "ts.png", w:47, h:47},
+      {alt: "C/C++", src: "cplus.png", w:45, h:47},
     ]
   },
   {
     title: "Database Experience",
     collection: [
       {alt: "MySQL", src: "mysql.png", w:50, h:50},
+      {alt: "Postgres", src: "Postgresql.png", w:50, h:50},
       {alt: "Mongo", src: "mongodb.png", w:50, h:50},
-      {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
+      // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
   {
-    title: "Frontend Experience",
+    title: "Libraries",
+    collection: [
+      {alt: "Pandas", src: "pandas.png", w:40, h:40},
+      {alt: "Numpy", src: "numpy.png", w:43, h:43},
+      {alt: "MUI", src: "mui.png", w:51, h:51},
+      {alt: "Bootstrap", src: "boot.png", w:45, h:45},
+      
+    ]
+  },
+  {
+    title: "Frameworks",
     collection: [
       {alt: "React", src: "react.png", w:50, h:44},
-      {alt: "MUI", src: "mui.png", w:50, h:50},
-      {alt: "Bootstrap", src: "boot.png", w:45, h:45},
-      {alt: "Angular", src: "angular.png", w:45, h:48},
+      {alt: "django-icon", src: "django-icon.svg", w:45, h:45},
+      {alt: "Next.js", src: "next.png", w:45, h:45},
+      // {alt: "Angular", src: "angular.png", w:45, h:48},
     ]
   },
-  {
-    title: "Technologies",
-    collection: [
-      {alt: "Git", src: "git.png", w:45, h:45},
-      {alt: "Node.js", src: "node.png", w:45, h:51},
-      {alt: "Next.js", src: "next.png", w:45, h:45},
-    ]
-  }
 ]
 
 const projects = [

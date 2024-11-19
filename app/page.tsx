@@ -18,7 +18,6 @@ export default async function Page() {
 
   return (
     <main className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-      {/* <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52"> */}
       <div className="w-full flex-none md:w-64">
         <SideNav />
       </div>

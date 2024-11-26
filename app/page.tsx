@@ -1,7 +1,6 @@
 
 import { Metadata } from 'next';
 import SideNav from '@/app/ui/dashboard/sidenav';
-import { LinkCard } from '@/app/ui/dashboard/my-cards';
 // import { AccordionExpandDefault } from '@/app/ui/dashboard/my-form';
 import { mono, inconsolata } from '@/app/ui/fonts';
 
@@ -13,8 +12,6 @@ export const metadata: Metadata = {
 
 
 export default async function Page() {
-  const linkTitle = "Useful links for you!";
-  const formTitle = "Resistor Calculator"
 
   return (
     <main className="flex h-screen flex-col md:flex-row md:overflow-hidden">
@@ -40,27 +37,7 @@ export default async function Page() {
               </p>
 
               
-            </div>
-
-        {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid xs={12}>
-              
-          </Grid>
-
-          <Grid xs={4}>
-            <LinkCard title={linkTitle} />
-          </Grid>
-        </Grid> */}
-
-
-
-
-
-       
-
-        
-        {/* <AccordionExpandDefault title={formTitle} /> */}
-        
+            </div>        
         </div>
       </div>
     </main>

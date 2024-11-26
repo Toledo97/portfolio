@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <main>
+    <div>
       <div className="flex flex-wrap gap-4 bg-gray-50 shadow p-6 align-left">
         <h1 className={`${mono.className} text-3xl`}>Activities</h1>
         <ActivitiesCardGrid/>
       </div>
-    </main>
+    </div>
   );
 }

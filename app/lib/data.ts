@@ -2,15 +2,15 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:150, h:150, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
+      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:150, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
     ]
   },
   {
     title: "IBM",
     collection: [
-      {alt: "Web Development", src: "web-dev.png", w:200, h:200, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},
-      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:200, h:200, issued: 'August 1, 2022', verify: 'https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile'},
-      {alt: "Professional Skills", src: "wps.png", w:200, h:200, issued: 'June 27, 2022', verify: 'https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile'},
+      {alt: "Web Development", src: "web-dev.png", w:150, h:150, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},
+      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:150, h:150, issued: 'August 1, 2022', verify: 'https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile'},
+      {alt: "Professional Skills", src: "wps.png", w:150, h:150, issued: 'June 27, 2022', verify: 'https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile'},
     ]
   },
   {

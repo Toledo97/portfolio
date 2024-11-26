@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { mono } from '@/app/ui/fonts';
-import {CertificateyCardGrid} from '@/app/ui/dashboard/my-cards';
+import { CertificateyCardGrid } from '@/app/ui/dashboard/my-cards';
 
 export const metadata: Metadata = {
   title: 'eLearning',

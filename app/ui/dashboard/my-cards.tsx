@@ -9,7 +9,6 @@ import {
   projects,
   skillsBundle,
   certificatesBundle,
-  randomLinks,
 } from '@/app/lib/data';
 import {
   ImageData,
@@ -184,6 +183,8 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
             src={`/images/` + imageData.src}
             width={imageData.w}
             height={imageData.h}
+            className="w-auto h-auto"
+
             priority
           />
           <h1 className={`${mono.className} mx-4 text-right`}>{location}</h1>
@@ -194,7 +195,7 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
               <div className="z-10 flex grid grid-cols-2 flex-row">
                 <div>
                   <h1
-                    className={`${mono.className} inline-block	text-left text-xl`}
+                    className={`${mono.className} inline-block text-left text-xl`}
                   >
                     {role.title}
                   </h1>
@@ -308,24 +309,3 @@ function CardTempl(title: string, images: ImageData[]) {
   );
 }
 
-export function LinkCard(props: LinkCardProps) {
-  return (
-    <div className="m-auto overflow-clip rounded bg-gray-100 p-4 shadow">
-      <h1 className={`${mono.className}  mx-3`}>{props.title}</h1>
-
-      <div className="relative flex w-full flex-col p-3">
-        <div className=" z-10 flex flex-col flex-wrap flex-wrap gap-4">
-          <>
-            {randomLinks.map((item, idx) => {
-              return (
-                <li key={`${item.name}-${idx}`} className={`px-5`}>
-                  <a href={item.link}>{item.name}</a>
-                </li>
-              );
-            })}
-          </>
-        </div>
-      </div>
-    </div>
-  );
-}

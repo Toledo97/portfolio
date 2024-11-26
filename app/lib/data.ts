@@ -67,7 +67,6 @@ const skillsBundle = [
       {alt: "Next.js", src: "next.png", w:50, h:50},
       {alt: "React", src: "react.png", w:50, h:50},
       {alt: "Django", src: "django-icon.svg", w:50, h:50},
-      // {alt: "Angular", src: "angular.png", w:45, h:48},
     ]
   },
 ]
@@ -292,11 +291,4 @@ const companies = [
 ]
 
 
-const randomLinks = [
-  {name: "Style Guide for Python" , link:"https://peps.python.org/pep-0008/"},
-  {name: "Git Cheatsheet" , link:"https://ndpsoftware.com/git-cheatsheet.html#loc=index;"},
-  {name: "Authenticate Using GitHub" , link:"https://firebase.google.com/docs/auth/web/github-auth"},
-  {name: "Vercel Documentation" , link:"https://vercel.com/docs"},
-]
-
-export { companies, activities, projects, certificatesBundle, skillsBundle, randomLinks };
+export { companies, activities, projects, certificatesBundle, skillsBundle };

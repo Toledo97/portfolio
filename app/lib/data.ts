@@ -2,7 +2,7 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "HP & CR Clinical Build", src: "Epic-U-Logo.png", w:150, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
+      {alt: "HP & CR Clinical Build", src: "EPIC.png", w:150, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
     ]
   },
   {

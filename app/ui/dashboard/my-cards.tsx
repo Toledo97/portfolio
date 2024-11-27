@@ -132,7 +132,7 @@ function ProjectsCard(item: Project) {
             {item.timeline}
           </h2>
         </div>
-
+        <ul>
         {item.description.map((point: string, idxk: number) => {
           return (
             <li key={idxk} className={`px-5`}>
@@ -140,6 +140,7 @@ function ProjectsCard(item: Project) {
             </li>
           );
         })}
+        </ul>
       </div>
     </div>
   );
@@ -206,6 +207,7 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
                   </h2>
                 </div>
               </div>
+              <ul>
               {role.description.map((point: string, idx: number) => {
                 return (
                   <li key={`${role.timeline}-${idx}`} className={`px-5`}>
@@ -213,6 +215,7 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
                   </li>
                 );
               })}
+              </ul>
             </div>
           );
         })}

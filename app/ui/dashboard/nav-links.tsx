@@ -6,7 +6,7 @@ import {
   BeakerIcon,
   AcademicCapIcon,
   ListBulletIcon,
-  BookOpenIcon
+  WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline';
 
 import { usePathname } from 'next/navigation';
@@ -21,7 +21,6 @@ const links = [
   { name: 'Projects', href: '/dashboard/projects', icon: BeakerIcon },
   { name: 'eLearning', href: '/dashboard/elearning', icon: AcademicCapIcon },
   { name: 'Activities', href: '/dashboard/activities', icon: ListBulletIcon },
-  // { name: 'Guestbook', href: '/dashboard/guestbook', icon: BookOpenIcon }
 ];
 
 export default function NavLinks() {

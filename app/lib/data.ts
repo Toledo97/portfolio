@@ -2,33 +2,37 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "HP & CR Clinical Build", src: "EPIC.png", w:150, h:175, issued: 'July 8, 2024', msg: 'HP & CR Clinical Build'},
+      {alt: "Tapestry Utilization Mangement Administration", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Tapestry Utilization Mangement Adminitstration", verify:"TBC"},
+
+      {alt: "Tapestry Essentials", src: "EPIC.png", w:135, h:135, issued: "Feburary 19, 2025", msg: "Tapestry Essentials", verify:"1277824377"},
+
+      {alt: "HP & CR Clinical Build", src: "EPIC.png", w:135, h:135, issued: "July 8, 2024", msg: "Healthy Planet & Compass Rose Clinical Build", verify:"956104700"},
     ]
   },
   {
     title: "IBM",
     collection: [
-      {alt: "Web Development", src: "web-dev.png", w:150, h:150, issued: 'January 18, 2024', verify: 'https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile'},
-      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:150, h:150, issued: 'August 1, 2022', verify: 'https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile'},
-      {alt: "Professional Skills", src: "wps.png", w:150, h:150, issued: 'June 27, 2022', verify: 'https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile'},
+      {alt: "Web Development", src: "web-dev.png", w:150, h:150, issued: "January 18, 2024", verify: "https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile"},
+      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:150, h:150, issued: "August 1, 2022", verify: "https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile"},
+      {alt: "Professional Skills", src: "wps.png", w:150, h:150, issued: "June 27, 2022", verify: "https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile"},
     ]
   },
   {
     title: "Coursera",
     collection: [
-      {alt: "IBM Databases w/ Python", src: "DSQL.png", w:350, h:271, issued: 'June 10, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course'},
-      {alt: "Databases w/ Python", src: "DBP.png", w:350, h:271, issued: 'May 29, 2021', verify: 'https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c'},
-      {alt: "Python Data Structures", src: "PD.png", w:350, h:271, issued: 'May 26, 2021', verify: 'https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T'},
-      {alt: "Programming for Everyone", src: "4Every1.png", w:350, h:271, issued: 'May 20, 2021', verify: 'https://coursera.org/share/d796b2c9e81a591443124a662ac050e7'},
+      {alt: "IBM Databases w/ Python", src: "DSQL.png", w:350, h:271, issued: "June 10, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"},
+      {alt: "Databases w/ Python", src: "DBP.png", w:350, h:271, issued: "May 29, 2021", verify: "https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c"},
+      {alt: "Python Data Structures", src: "PD.png", w:350, h:271, issued: "May 26, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T"},
+      {alt: "Programming for Everyone", src: "4Every1.png", w:350, h:271, issued: "May 20, 2021", verify: "https://coursera.org/share/d796b2c9e81a591443124a662ac050e7"},
     ]
   },
   {
     title: "Nvidia",
     collection: [
-      {alt: "AI on Jetson Nano", src: "jetsonNano.png", w:250, h:292, issued: 'September 21, 2021', verify: 'https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/'},
-      {alt: "Streams in CUDA", src: "acceleratedCUDA.png", w:350, h:271, issued: 'August 6, 2021', verify: 'https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0'},
-      {alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w:350, h:271, issued: 'August 9, 2021', verify: 'https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e'},
-      {alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w:350, h:271, issued: 'April 25, 2021', verify: 'https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f'},
+      {alt: "AI on Jetson Nano", src: "jetsonNano.png", w:250, h:292, issued: "September 21, 2021", verify: "https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/"},
+      {alt: "Streams in CUDA", src: "acceleratedCUDA.png", w:350, h:271, issued: "August 6, 2021", verify: "https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0"},
+      {alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w:350, h:271, issued: "August 9, 2021", verify: "https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e"},
+      {alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w:350, h:271, issued: "April 25, 2021", verify: "https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f"},
     ]
   },
 ]
@@ -73,10 +77,10 @@ const skillsBundle = [
 
 const projects = [
   {
-    title: 'Personal Website V2',
-    subTitle: 'Web-Application',
-    location: '',
-    timeline: 'January 2024 - Current',
+    title: "Personal Website V2",
+    subTitle: "Web-Application",
+    location: "",
+    timeline: "January 2024 - Current",
     description: [
       `Developing a dynamic and responsive web application using Next.js, 
         a React framework, to enhance user experience and optimize performance.`,
@@ -86,13 +90,13 @@ const projects = [
     ]
   },
   {
-    title: 'Creator Capital Index',
-    subTitle: 'Web-Application',
-    location: 'Champaign, IL',
-    timeline: 'Aug 2023 - Nov 2023',
+    title: "Creator Capital Index",
+    subTitle: "Web-Application",
+    location: "Champaign, IL",
+    timeline: "Aug 2023 - Nov 2023",
     description: [
       `Developed a data-driven platform to track trending YouTube channels 
-      and relevant analytics, merging datasets from Kaggle and utilizing Google\'s YouTube API.`,
+      and relevant analytics, merging datasets from Kaggle and utilizing Google\"s YouTube API.`,
       `Lead in the design process and organization of the project. Ensuring for 
       deadlines to be met and setting meetings.`,
       `Developed a dynamic website with CRUD operations, utilizing Node.js for the backend, React for the frontend,
@@ -100,11 +104,11 @@ const projects = [
     ]
   },
   {
-    title: 'GPU Convolution Kernel Optimizations',
+    title: "GPU Convolution Kernel Optimizations",
     subTitle: `Optimized a forward-pass of a convolutional 
     layer using CUDA.`,
-    location: 'Champaign, IL',
-    timeline: 'Nov 2022 - Dec 2022',
+    location: "Champaign, IL",
+    timeline: "Nov 2022 - Dec 2022",
     description: [
       `Shared Memory: Data stored in shared memory to reduce FP16 datatype conversion delay.`,
       `Fixed point (FP16) arithmetic: Split channel iteration to reduce serial calculation.`,
@@ -112,10 +116,10 @@ const projects = [
     ]
   },
   {
-    title: 'CarlOS',
-    subTitle: 'Operating System',
-    location: 'Champaign, IL',
-    timeline: 'Mar 2022 - May 2022',
+    title: "CarlOS",
+    subTitle: "Operating System",
+    location: "Champaign, IL",
+    timeline: "Mar 2022 - May 2022",
     description: [
       `The final state of the OS consisted of a single terminal with a read-only file-system. 
       It can execute and close basic c programs through the terminal.`,
@@ -124,10 +128,10 @@ const projects = [
     ]
   },
   {
-    title: 'Home Security System',
-    subTitle: 'TI MSP432',
-    location: 'Champaign, IL',
-    timeline: 'Nov 2021',
+    title: "Home Security System",
+    subTitle: "TI MSP432",
+    location: "Champaign, IL",
+    timeline: "Nov 2021",
     description: [
       `Created a responsive user interface using a keypad and LCD screen, facilitating user 
       interaction and system control.`,
@@ -138,10 +142,10 @@ const projects = [
     ]
   },
   {
-    title: 'Tetris Video game',
-    subTitle: 'D10 Lite FPGA',
-    location: 'Champaign, IL',
-    timeline: 'Apr 2021 - May 2021',
+    title: "Tetris Video game",
+    subTitle: "D10 Lite FPGA",
+    location: "Champaign, IL",
+    timeline: "Apr 2021 - May 2021",
     description: [
       `Designed basic logic on Quartus Prime Platform to output in VGA format and a SoC - NIOS II processor for USB control.`,
       `Modified Xbox One controller drivers to function on the FPGA for game movement and general I/O.`,
@@ -165,7 +169,7 @@ const activities = [
           innovation, impact, inclusion, teamwork, and fun.`,
           `Helped with workshops on specific skills, including sessions on programming LEGO SPIKE robots, 
           brainstorming solutions to problems, and effectively presenting and communicating.`,
-          'Collaborated with other coaches and mentors to enhance the overall experience for participating teams.'
+          "Collaborated with other coaches and mentors to enhance the overall experience for participating teams."
         ],
       }
     ]
@@ -180,7 +184,7 @@ const activities = [
         description: [
           `Assisted students and instructors with lab activities and discussed useful methods of lab completion for students.`,
           `Practiced effective questioning and active listening strategies when engaging with students to enhance their learning experience.`,
-          `Created a lab assignment based on the students' interests and needs to improve their understanding of elastic and inelastic collisions.`,
+          `Created a lab assignment based on the students" interests and needs to improve their understanding of elastic and inelastic collisions.`,
         ],
       }
     ]
@@ -202,7 +206,7 @@ const activities = [
         title: "Activities Lead",
         timeline: "July 2020 - May 2021",
         description: [
-          `Created alternative online activities for the organization's outreach programs that are both engaging and constructive.`,
+          `Created alternative online activities for the organization"s outreach programs that are both engaging and constructive.`,
           `Organized and executed activities with a written plan to prepare for any logistical issues.`,
           `Established partnerships with local schools and other educational institutions to expand the reach of engineering education programs.`
         ],
@@ -213,7 +217,7 @@ const activities = [
         description: [
           `Planned and executed fundraising events to raise money for social events and non-profit organizations.`,
           `Lead a team to organize the biggest event for SHPE, "The Date Auction / Dance", for funding the UIUC Chapter.`,
-          `Shadowed the whole organization's Treasurer to learn more about manging events, money, and logistics of planning 
+          `Shadowed the whole organization"s Treasurer to learn more about manging events, money, and logistics of planning 
             and executing events and meetings.`
         ],
       }

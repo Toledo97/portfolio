@@ -22,6 +22,9 @@ const config: Config = {
         '128': '32rem',
         '112': '28rem',
         '68': '17rem',
+      },
+      width: {
+        '52':'13rem'
       }
     },
     keyframes: {

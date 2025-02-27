@@ -51,7 +51,7 @@ const skillsBundle = [
     collection: [
       {alt: "MySQL", src: "mysql.png", w:45, h:45},
       {alt: "Postgres", src: "Postgresql.png", w:45, h:45},
-      {alt: "Mongo", src: "mongodb.png", w:50, h:50},
+      // {alt: "Mongo", src: "mongodb.png", w:50, h:50},
       // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
@@ -96,7 +96,7 @@ const projects = [
     timeline: "Aug 2023 - Nov 2023",
     description: [
       `Developed a data-driven platform to track trending YouTube channels 
-      and relevant analytics, merging datasets from Kaggle and utilizing Google\"s YouTube API.`,
+      and relevant analytics, merging datasets from Kaggle and utilizing Google\'s YouTube API.`,
       `Lead in the design process and organization of the project. Ensuring for 
       deadlines to be met and setting meetings.`,
       `Developed a dynamic website with CRUD operations, utilizing Node.js for the backend, React for the frontend,
@@ -265,9 +265,9 @@ const companies = [
       timeline: "May 2021 - May 2022",
       description: [
       `Used python to create a dynamic method of generating and replacing tailored 
-      MySQL procedures to optimize database performance based on a user\"s product ownership.`,
+      MySQL procedures to optimize database performance based on a user\'s product ownership.`,
       `Consolidated and cleaned data from CouchDB and Cosmos with Python, using 
-      multiprocessing libraries for seamless information flow across our application\"s pipeline.`,
+      multiprocessing libraries for seamless information flow across our application\'s pipeline.`,
       `Engaged with an international teams in daily design meetings to drive 
       project success and maintain clear communication to meet biweekly sprint goals.`
       ],

@@ -2,7 +2,7 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "Tapestry Utilization Mangement Administration", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Tapestry Utilization Mangement Adminitstration", verify:"TBC"},
+      {alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Tapestry Utilization Mangement Adminitstration", verify:"TBC"},
 
       {alt: "Tapestry Essentials", src: "EPIC.png", w:135, h:135, issued: "Feburary 19, 2025", msg: "Tapestry Essentials", verify:"1277824377"},
 

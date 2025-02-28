@@ -234,12 +234,18 @@ const companies = [
       title:"Sys-Ops & Care Mgmt Analyst", 
       timeline: "Feb 2024 - Current",
       description: [
-      `Implementing innovative strategies, including scripting, to streamline workflow and technical processes. 
-      This involves creating automated tools to enhance the importation of auditing data and improve overall system functionality.`,
-      `Utilized SQL expertise to modify queries, enabling comprehensive auditing of case data, 
+      `Accurately unit test system upgrades and features, and create comprehensive 
+      solutions for critical system errors in a timely manner to avoid disruption in user workflows.`,
+      `Communicate with business owners on a regular basis to create scalable 
+      solutions to enhance and optimize workflows within Epic's software.`,
+      `Implement innovative strategies, including scripting, to streamline workflow 
+      and technical processes. This involves creating automated tools to enhance the 
+      importation of auditing data and improve overall system functionality.`,
+      `Utilize SQL to modify queries, enabling comprehensive auditing of case data, 
       thereby ensuring accuracy and compliance with regulatory standards.`,
-      `Effectively articulate complex technical concepts and project accomplishments in a clear and meaningful manner, 
-      fostering effective communication and alignment across the organization.`],
+      `Effectively articulate  technical concepts and project accomplishments in a clear 
+      and meaningful manner for non-technical business owners to understand the progresses of larger projects..`
+  ],
   }
   ]
 },

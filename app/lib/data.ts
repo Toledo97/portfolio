@@ -2,8 +2,12 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Tapestry Utilization Mangement Adminitstration", verify:"TBC"},
+      {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
 
+      {alt: "Referrals and Authorizations", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Referrals and Authorizations", verify:"TBC"},
+
+      {alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w:135, h:135, issued: "March 3, 2025", msg: "Tapestry Utilization Mangement Adminitstration", verify:"1412179176"},
+      
       {alt: "Tapestry Essentials", src: "EPIC.png", w:135, h:135, issued: "Feburary 19, 2025", msg: "Tapestry Essentials", verify:"1277824377"},
 
       {alt: "HP & CR Clinical Build", src: "EPIC.png", w:135, h:135, issued: "July 8, 2024", msg: "Healthy Planet & Compass Rose Clinical Build", verify:"956104700"},

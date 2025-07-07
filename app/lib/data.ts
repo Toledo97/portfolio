@@ -4,7 +4,7 @@ const certificatesBundle = [
     collection: [
       {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
 
-      {alt: "Referrals and Authorizations", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Referrals and Authorizations", verify:"TBC"},
+      {alt: "Referrals and Authorizations", src: "EPIC.png", w:135, h:135, issued: "May 5th, 2025", msg: "Referrals and Authorizations", verify:"1473175718"},
 
       {alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w:135, h:135, issued: "March 3, 2025", msg: "Tapestry Utilization Mangement Adminitstration", verify:"1412179176"},
       
@@ -81,10 +81,33 @@ const skillsBundle = [
 
 const projects = [
   {
+    title: "Movie Tracker",
+    subTitle: "Web-Application",
+    location: "",
+    timeline: "June 2025 - Current",
+    description: [
+      `Build and maintain a full-stack web app using Next.js (TypeScript) and PostgreSQL to track and log A24 movies for authenticated users.`,
+      `Implement and manage Supabase authentication with email-based login and input verification for a secure, invite-only user experience.`,
+      `Develop and refine serverless functions to handle CRUD operations and real-time database interactions via Supabase.`,
+      `Deploy and continuously improve the application on Vercel, ensuring high performance, streamlined CI/CD, and smooth rollout of updates.`  
+    ]
+  },
+  // {
+  //   title: "Open Chicago Apps",
+  //   subTitle: "Web-Application",
+  //   location: "",
+  //   timeline: "April 2025 - Current",
+  //   description: [
+  //     `Utilizing the Chicago City API to pull useful data to encourage the exploration of Chicago by searching for current and past film locations.`,
+  //     `Designing `,
+      
+  //   ]
+  // },
+  {
     title: "Personal Website V2",
     subTitle: "Web-Application",
     location: "",
-    timeline: "January 2024 - Current",
+    timeline: "January 2024",
     description: [
       `Developing a dynamic and responsive web application using Next.js, 
         a React framework, to enhance user experience and optimize performance.`,

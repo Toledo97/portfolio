@@ -33,6 +33,7 @@ export type Project = {
   location: string;
   timeline: string;
   description: string[];
+  url?: string;
 }
 
 export type Signature = {
@@ -49,4 +50,8 @@ export interface LinkCardProps {
 
 export interface FormProps {
   title: string;
+}
+
+export interface BasicPageProps extends React.PropsWithChildren {
+    title: string;
 }

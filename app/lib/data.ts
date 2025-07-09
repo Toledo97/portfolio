@@ -1,3 +1,5 @@
+import { url } from "inspector"
+
 const certificatesBundle = [
   {
     title: "Epic University",
@@ -85,6 +87,7 @@ const projects = [
     subTitle: "Web-Application",
     location: "",
     timeline: "June 2025 - Current",
+    url: "https://movie-tracker-tau.vercel.app/?table=0&page=1&f=false",
     description: [
       `Build and maintain a full-stack web app using Next.js (TypeScript) and PostgreSQL to track and log A24 movies for authenticated users.`,
       `Implement and manage Supabase authentication with email-based login and input verification for a secure, invite-only user experience.`,

@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next';
-import SideNav from '@/app/ui/dashboard/sidenav';
+import SideNav from '@/app/ui/dashboard/side-nav';
 import { mono, inconsolata } from '@/app/ui/fonts';
 
 

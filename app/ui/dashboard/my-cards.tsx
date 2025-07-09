@@ -99,63 +99,14 @@ export function ProfileCard() {
   );
 }
 
-export function ProjectsCardGrid() {
-  return (
-    <div className="mt-2 flex flex-col gap-3">
-      {projects.map((item: Project) => {
-        return ProjectsCard(item);
-      })}
-    </div>
-  );
-}
-
-function ProjectsCard(item: Project) {
-  return (
-    <div
-      className="m-auto w-full overflow-clip rounded p-6 shadow "
-      key={item.title}
-    >
-      <div className="align-left relative flex flex-col gap-3 pb-3">
-        <div className="z-10 flex grid grid-cols-2 flex-row">
-          <h1 className={`${mono.className} mx-4 text-left text-xl `}>
-            {item.title}
-          </h1>
-          <h1 className={`${mono.className} mx-4 text-right`}>
-            {item.location}
-          </h1>
-        </div>
-        <div className="z-10 flex grid grid-cols-2 flex-row">
-          <h1 className={`${inconsolata.className} mx-4 text-left text-xl`}>
-            {item.subTitle}
-          </h1>
-          <h2 className={`${inconsolata.className} mx-4 text-right `}>
-            {item.timeline}
-          </h2>
-        </div>
-        <ul>
-          {item.description.map((point: string, idxk: number) => {
-            return (
-              <li key={idxk} className={`px-5`}>
-                {point}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
-}
-
 export function ActivitiesCardGrid() {
   return (
     <div className="mt-2 flex flex-col gap-3">
-      {activities.map((item: Entity, idxj: number) => {
-        return (
+      {activities.map((item: Entity, idxj: number) =>  (
           <div key={idxj}>
             {CompanyCard(item.imageData, item.roles, item.subTitle)}
           </div>
-        );
-      })}
+        ))}
     </div>
   );
 }
@@ -163,13 +114,11 @@ export function ActivitiesCardGrid() {
 export function CompanyCardGrid() {
   return (
     <div className="mt-2 flex flex-col gap-3">
-      {companies.map((item: Entity) => {
-        return (
+      {companies.map((item: Entity) =>  (
           <div key={item.imageData.alt}>
             {CompanyCard(item.imageData, item.roles, item.location)}
           </div>
-        );
-      })}
+        ))}
     </div>
   );
 }
@@ -190,8 +139,8 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
           />
           <h1 className={`${mono.className} mx-4 text-right`}>{location}</h1>
         </div>
-        {roles.map((role: Role, idx: number) => {
-          return (
+        {roles.map((role: Role, idx: number) => 
+          (
             <div className="z-10 flex flex-col" key={idx}>
               <div className="z-10 flex grid grid-cols-2 flex-row">
                 <div>
@@ -207,18 +156,18 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
                   </h2>
                 </div>
               </div>
-              <ul>
-                {role.description.map((point: string, idx: number) => {
-                  return (
-                    <li key={`${role.timeline}-${idx}`} className={`px-5`}>
-                      {point}
-                    </li>
-                  );
-                })}
+              <ul className="list-disc mx-4">
+                {role.description.map((point: string, idx: number) =>
+                (
+                  <li key={`${role.timeline}-${idx}`} className={`px-5`}>
+                    {point}
+                  </li>
+                )
+                )}
               </ul>
             </div>
-          );
-        })}
+          )
+        )}
       </div>
     </div>
   );
@@ -227,11 +176,9 @@ function CompanyCard(imageData: ImageData, roles: Role[], location: string) {
 export function CertificateyCardGrid() {
   return (
     <div className="mt-2 flex w-full flex-col gap-3">
-      {certificatesBundle.map((item: Skill, idx: number) => {
-        return (
+      {certificatesBundle.map((item: Skill, idx: number) =>  (
           <div key={idx}>{CertificateCard(item.title, item.collection)}</div>
-        );
-      })}
+        ))}
     </div>
   );
 }
@@ -325,8 +272,8 @@ function CardTempl(title: string, images: ImageData[]) {
       <div className="relative flex w-full flex-col p-3">
         <div className=" z-10 flex flex-row flex-wrap items-center justify-center gap-4">
           <>
-            {images.map((item, idx) => {
-              return (
+            {images.map((item, idx) => 
+             (
                 <Tooltip title={item.alt} key={idx}>
                   <Image
                     alt={item.alt}
@@ -336,8 +283,8 @@ function CardTempl(title: string, images: ImageData[]) {
                     height={item.h}
                   />
                 </Tooltip>
-              );
-            })}
+              )
+            )}
           </>
         </div>
       </div>

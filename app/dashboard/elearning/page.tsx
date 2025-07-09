@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { CertificateyCardGrid } from '@/app/ui/dashboard/my-cards';
+import CertificateyCardGrid from '@/app/ui/dashboard/certificate-cards';
 import PageFrame from '@/app/ui/dashboard/page-frame'
 
 export const metadata: Metadata = {

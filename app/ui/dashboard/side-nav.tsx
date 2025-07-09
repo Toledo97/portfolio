@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
-import MyLogo from '@/app/ui/my-logo';
+import MyLogo from '@/app/ui/dashboard/my-logo';
 
 export default function SideNav() {
   return (

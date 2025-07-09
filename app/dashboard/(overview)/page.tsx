@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
-import { ProfileCard, SkillCards } from '@/app/ui/dashboard/my-cards';
+
+import { SkillCards } from '@/app/ui/dashboard/my-cards';
+import ProfileCard from '@/app/ui/dashboard/profile-card';
 
 export const metadata: Metadata = {
   title: 'Dashboard',

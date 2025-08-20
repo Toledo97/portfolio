@@ -4,7 +4,7 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
+      // {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
 
       {alt: "Referrals and Authorizations", src: "EPIC.png", w:135, h:135, issued: "May 5th, 2025", msg: "Referrals and Authorizations", verify:"1473175718"},
 

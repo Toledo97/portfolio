@@ -57,7 +57,7 @@ const skillsBundle = [
     collection: [
       {alt: "MySQL", src: "mysql.png", w:45, h:45},
       {alt: "Postgres", src: "Postgresql.png", w:45, h:45},
-      // {alt: "Mongo", src: "mongodb.png", w:50, h:50},
+      {alt: "Mongo", src: "mongodb.png", w:50, h:50},
       // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
@@ -82,6 +82,21 @@ const skillsBundle = [
 ]
 
 const projects = [
+  // {
+  //   title: "Dominó Cubano",
+  //   subTitle: "Python Application",
+  //   location: "",
+  //   timeline: "Sept 2025 - Current",
+  //   // url: "",
+  //   description: [
+  //     `Terminal-based Domino Game built entirely in Python without external libraries, focusing on simplicity and core logic implementation.`,
+  //     `Programmed game loop mechanics including deck shuffling, tile distribution, turn order, and rule validation for tile placement.`,
+  //     `Designed with nested classes (e.g., Domino, Player, Game) for a clean and uniform structure, even if not the most conventional approach.`,
+  //     `Implemented 4-player gameplay with one human player and three CPU opponents that automatically play the first valid domino.`,
+  //     `Emphasized simplicity and predictability through deterministic CPU logic, making it effective for both testing and demonstration.`,
+  //   ]
+  // },
+
   {
     title: "Movie Tracker",
     subTitle: "Web-Application",
@@ -261,20 +276,14 @@ const companies = [
   location: "Champaign, IL",
   roles: [
   {
-      title:"Sys-Ops & Care Mgmt Analyst", 
+      title:"Lead CM System Analyst", 
       timeline: "Feb 2024 - Current",
       description: [
-      `Accurately unit test system upgrades and features, and create comprehensive 
-      solutions for critical system errors in a timely manner to avoid disruption in user workflows.`,
-      `Communicate with business owners on a regular basis to create scalable 
-      solutions to enhance and optimize workflows within Epic's software.`,
-      `Implement innovative strategies, including scripting, to streamline workflow 
-      and technical processes. This involves creating automated tools to enhance the 
-      importation of auditing data and improve overall system functionality.`,
-      `Utilize SQL to modify queries, enabling comprehensive auditing of case data, 
-      thereby ensuring accuracy and compliance with regulatory standards.`,
-      `Effectively articulate  technical concepts and project accomplishments in a clear 
-      and meaningful manner for non-technical business owners to understand the progresses of larger projects..`
+      `Developed automated tools that enhanced the importation of auditing data and improved overall system functionality, reducing task completion time by over 70%.`,
+      `Accurately unit test system upgrades and features, and create comprehensive solutions for critical system errors in a timely manner to avoid disruption in user workflows.`,
+      `Communicate with business owners on a regular basis to create scalable solutions to enhance and optimize workflows within Epic’s software.`,
+      `Utilize SQL to modify queries, enabling comprehensive auditing of case data, thereby ensuring accuracy and compliance with regulatory standards.`,
+      `Effectively articulate technical concepts and project accomplishments in a clear and meaningful manner for non-technical business owners to understand the progress of larger projects.`
   ],
   }
   ]
@@ -287,13 +296,9 @@ const companies = [
       title:"Software Engineer: Frontend", 
       timeline: "Sept 2023 - Dec 2023",
       description: [
-      `Gained hands-on experience in writing unit tests and end-to-end tests 
-      for Angular applications, ensuring code reliability and quality.`,
-      `Wrote production ready code, conducted rigorous testing, review, and 
-      followed best practices for secure and reliable web app.`,
-      `Engaged in effective communication to convey ideas, suggestions, and 
-      project updates, ensuring myself and team members were well-informed and 
-      aligned with project goals.`
+      `Gained hands-on experience in writing unit tests and end-to-end tests for Angular applications, ensuring code reliability and quality.`,
+      `Wrote production ready code, conducted rigorous testing, review, and followed best practices for a secure and reliable app.`,
+      `Engaged in effective communication to convey ideas, suggestions, and project updates, ensuring myself and team members were well-informed and aligned with project goals.`
       ],
   },
   {
@@ -302,9 +307,8 @@ const companies = [
       description: [
       `Used python to create a dynamic method of generating and replacing tailored 
       MySQL procedures to optimize database performance based on a user\'s product ownership.`,
-      `Consolidated and cleaned data from CouchDB and Cosmos with Python, using 
-      multiprocessing libraries for seamless information flow across our application\'s pipeline.`,
-      `Engaged with an international teams in daily design meetings to drive 
+      `Merged & cleaned data from CouchDB and Cosmos through Python scripts for seamless information flow across our application\'s pipeline.`,
+      `Engaged with international teams in daily design meetings to drive 
       project success and maintain clear communication to meet biweekly sprint goals.`
       ],
   }

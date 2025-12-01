@@ -12,6 +12,7 @@ import {
 import Image from 'next/image';
 import Tooltip from '@mui/material/Tooltip';
 import { mono, inconsolata } from '@/app/ui/fonts';
+import Link from 'next/link';
 
 export function DefaultCard(imageData: ImageData, roles: Role[], location: string) {
   return (
@@ -24,7 +25,6 @@ export function DefaultCard(imageData: ImageData, roles: Role[], location: strin
             width={imageData.w}
             height={imageData.h}
             className="w-auto h-auto"
-
             priority
           />
           <h1 className={`${mono.className} mx-4 text-right`}>{location}</h1>
@@ -37,7 +37,9 @@ export function DefaultCard(imageData: ImageData, roles: Role[], location: strin
                 <h1
                   className={`${mono.className} inline-block text-left text-xl`}
                 >
-                  {role.title}
+                  {!role.url? <>{role.title}</> :
+                    <Link className='text-blue-600 ' href={role.url || ''}>{role.title}</Link>
+                  }
                 </h1>
               </div>
               <div>

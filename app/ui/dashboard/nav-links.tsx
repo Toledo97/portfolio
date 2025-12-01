@@ -8,6 +8,7 @@ import {
   ListBulletIcon,
   WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -36,7 +37,7 @@ export default function NavLinks() {
             href={link.href}
             aria-label={link.name}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-50 hover:text-blue-800 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] shadow grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-50 hover:text-blue-800 md:flex-none md:justify-start md:p-2 md:px-3',
               {
                 'bg-sky-50 text-blue-800': pathname === link.href,
               },

@@ -6,39 +6,39 @@ const certificatesBundle = [
     collection: [
       // {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
 
-      {alt: "Referrals and Authorizations", src: "EPIC.png", w:135, h:135, issued: "May 5th, 2025", msg: "Referrals and Authorizations", verify:"1473175718"},
+      { alt: "Referrals and Authorizations", src: "EPIC.png", w: 135, h: 135, issued: "May 5th, 2025", msg: "Referrals and Authorizations", verify: "1473175718" },
 
-      {alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w:135, h:135, issued: "March 3, 2025", msg: "Tapestry Utilization Mangement Adminitstration", verify:"1412179176"},
-      
-      {alt: "Tapestry Essentials", src: "EPIC.png", w:135, h:135, issued: "Feburary 19, 2025", msg: "Tapestry Essentials", verify:"1277824377"},
+      { alt: "Tapestry Utilization Management Administration", src: "EPIC.png", w: 135, h: 135, issued: "March 3, 2025", msg: "Tapestry Utilization Mangement Adminitstration", verify: "1412179176" },
 
-      {alt: "HP & CR Clinical Build", src: "EPIC.png", w:135, h:135, issued: "July 8, 2024", msg: "Healthy Planet & Compass Rose Clinical Build", verify:"956104700"},
+      { alt: "Tapestry Essentials", src: "EPIC.png", w: 135, h: 135, issued: "Feburary 19, 2025", msg: "Tapestry Essentials", verify: "1277824377" },
+
+      { alt: "HP & CR Clinical Build", src: "EPIC.png", w: 135, h: 135, issued: "July 8, 2024", msg: "Healthy Planet & Compass Rose Clinical Build", verify: "956104700" },
     ]
   },
   {
     title: "IBM",
     collection: [
-      {alt: "Web Development", src: "web-dev.png", w:150, h:150, issued: "January 18, 2024", verify: "https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile"},
-      {alt: "IBM Accelerate", src: "IBMAccelerate.png", w:150, h:150, issued: "August 1, 2022", verify: "https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile"},
-      {alt: "Professional Skills", src: "wps.png", w:150, h:150, issued: "June 27, 2022", verify: "https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile"},
+      { alt: "Web Development", src: "web-dev.png", w: 150, h: 150, issued: "January 18, 2024", verify: "https://www.credly.com/badges/e8d8f40c-aac9-4a74-a3de-a249f336ac72/linked_in_profile" },
+      { alt: "IBM Accelerate", src: "IBMAccelerate.png", w: 150, h: 150, issued: "August 1, 2022", verify: "https://www.credly.com/badges/8a06d566-8657-4850-bd18-aaba6cf13e8c?source=linked_in_profile" },
+      { alt: "Professional Skills", src: "wps.png", w: 150, h: 150, issued: "June 27, 2022", verify: "https://www.credly.com/badges/82097ced-d7cb-4f7d-a790-50769f3edbe3?source=linked_in_profile" },
     ]
   },
   {
     title: "Coursera",
     collection: [
-      {alt: "IBM Databases w/ Python", src: "DSQL.png", w:350, h:271, issued: "June 10, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"},
-      {alt: "Databases w/ Python", src: "DBP.png", w:350, h:271, issued: "May 29, 2021", verify: "https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c"},
-      {alt: "Python Data Structures", src: "PD.png", w:350, h:271, issued: "May 26, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T"},
-      {alt: "Programming for Everyone", src: "4Every1.png", w:350, h:271, issued: "May 20, 2021", verify: "https://coursera.org/share/d796b2c9e81a591443124a662ac050e7"},
+      { alt: "IBM Databases w/ Python", src: "DSQL.png", w: 350, h: 271, issued: "June 10, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/FMS2DHUPVJAC?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" },
+      { alt: "Databases w/ Python", src: "DBP.png", w: 350, h: 271, issued: "May 29, 2021", verify: "https://coursera.org/share/b35b12f2f1a1e8a981fdeb7e591f746c" },
+      { alt: "Python Data Structures", src: "PD.png", w: 350, h: 271, issued: "May 26, 2021", verify: "https://www.coursera.org/account/accomplishments/verify/GW3BY2G99E8T" },
+      { alt: "Programming for Everyone", src: "4Every1.png", w: 350, h: 271, issued: "May 20, 2021", verify: "https://coursera.org/share/d796b2c9e81a591443124a662ac050e7" },
     ]
   },
   {
     title: "Nvidia",
     collection: [
-      {alt: "AI on Jetson Nano", src: "jetsonNano.png", w:250, h:292, issued: "September 21, 2021", verify: "https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/"},
-      {alt: "Streams in CUDA", src: "acceleratedCUDA.png", w:350, h:271, issued: "August 6, 2021", verify: "https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0"},
-      {alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w:350, h:271, issued: "August 9, 2021", verify: "https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e"},
-      {alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w:350, h:271, issued: "April 25, 2021", verify: "https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f"},
+      { alt: "AI on Jetson Nano", src: "jetsonNano.png", w: 250, h: 292, issued: "September 21, 2021", verify: "https://courses.nvidia.com/certificates/e2d9a8c057944f1291873b8d8af6015f/" },
+      { alt: "Streams in CUDA", src: "acceleratedCUDA.png", w: 350, h: 271, issued: "August 6, 2021", verify: "https://courses.nvidia.com/certificates/5e5deb98be46496fbb8102b8d6a44ed0" },
+      { alt: "Scaling Workloads w/ CUDA", src: "scalingCUDA.png", w: 350, h: 271, issued: "August 9, 2021", verify: "https://courses.nvidia.com/certificates/9899dd72669e45c98978dc06abf0a35e" },
+      { alt: "Fundamentals of CUDA", src: "FundamentalsCUDA.png", w: 350, h: 271, issued: "April 25, 2021", verify: "https://courses.nvidia.com/certificates/26378fb0acfe4a2fb1f026fa84d5109f" },
     ]
   },
 ]
@@ -47,36 +47,36 @@ const skillsBundle = [
   {
     title: "Frequent Languages",
     collection: [
-      {alt: "Python", src: "python.png", w:45, h:45},
-      {alt: "TS", src: "ts.png", w:45, h:45},
-      {alt: "C/C++", src: "cplus.png", w:40, h:40},
+      { alt: "Python", src: "python.png", w: 45, h: 45 },
+      { alt: "TS", src: "ts.png", w: 45, h: 45 },
+      { alt: "C/C++", src: "cplus.png", w: 40, h: 40 },
     ]
   },
   {
     title: "Databases",
     collection: [
-      {alt: "MySQL", src: "mysql.png", w:45, h:45},
-      {alt: "Postgres", src: "Postgresql.png", w:45, h:45},
-      {alt: "Mongo", src: "mongodb.png", w:50, h:50},
+      { alt: "MySQL", src: "mysql.png", w: 45, h: 45 },
+      { alt: "Postgres", src: "Postgresql.png", w: 45, h: 45 },
+      { alt: "Mongo", src: "mongodb.png", w: 50, h: 50 },
       // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
   {
     title: "Libraries",
     collection: [
-      {alt: "Pandas", src: "pandas.png", w:35, h:35},
-      {alt: "Numpy", src: "numpy.png", w:43, h:43},
-      {alt: "MUI", src: "mui.png", w:50, h:50},
-      {alt: "Bootstrap", src: "boot.png", w:45, h:45},
+      { alt: "Pandas", src: "pandas.png", w: 35, h: 35 },
+      { alt: "Numpy", src: "numpy.png", w: 43, h: 43 },
+      { alt: "MUI", src: "mui.png", w: 50, h: 50 },
+      { alt: "Bootstrap", src: "boot.png", w: 45, h: 45 },
     ],
     more: true
   },
   {
     title: "Frameworks",
     collection: [
-      {alt: "Next.js", src: "next.png", w:50, h:50},
-      {alt: "React", src: "react.png", w:50, h:50},
-      {alt: "Django", src: "django-icon.svg", w:50, h:50},
+      { alt: "Next.js", src: "next.png", w: 50, h: 50 },
+      { alt: "React", src: "react.png", w: 50, h: 50 },
+      { alt: "Django", src: "django-icon.svg", w: 50, h: 50 },
     ]
   },
 ]
@@ -107,7 +107,7 @@ const projects = [
       `Build and maintain a full-stack web app using Next.js (TypeScript) and PostgreSQL to track and log A24 movies for authenticated users.`,
       `Implement and manage Supabase authentication with email-based login and input verification for a secure, invite-only user experience.`,
       `Develop and refine serverless functions to handle CRUD operations and real-time database interactions via Supabase.`,
-      `Deploy and continuously improve the application on Vercel, ensuring high performance, streamlined CI/CD, and smooth rollout of updates.`  
+      `Deploy and continuously improve the application on Vercel, ensuring high performance, streamlined CI/CD, and smooth rollout of updates.`
     ]
   },
   // {
@@ -118,7 +118,7 @@ const projects = [
   //   description: [
   //     `Utilizing the Chicago City API to pull useful data to encourage the exploration of Chicago by searching for current and past film locations.`,
   //     `Designing `,
-      
+
   //   ]
   // },
   {
@@ -196,16 +196,33 @@ const projects = [
       `Modified Xbox One controller drivers to function on the FPGA for game movement and general I/O.`,
       `Created custom block sprites that are projected in the VGA format and saved in 
       a two-dimensional, tri-directional shift registers.`,
-    ]  
+    ]
   },
 ]
 
 const activities = [
   {
-    imageData: {alt: "First Lego League", src: "activities/fll-logo.png", w:180, h:94}, 
+    imageData: { alt: "Run with a Purpose", src: "activities/running.png", w: 100, h: 100 },
+    subTitle: "Chicago, IL",
+    roles: [
+      {
+        title: "Running Sponsorship",
+        timeline: "Jun 2025 - Current",
+        url: "https://runwithapurpose.vercel.app/",
+        description: [
+          "Actively train and compete in multiple races with the long-term goal of completing the full Chicago Running Series.",
+          "Partner with local businesses by featuring their logos on race apparel and promotional materials.",
+          "Represent the Humboldt Park community and celebrate Puerto Rican culture at every race event.",
+          "Give back through community involvement by offering volunteer support and promoting positive visibility for neighborhood organizations.",
+        ],
+      }
+    ]
+  },
+  {
+    imageData: { alt: "First Lego League", src: "activities/fll-logo.png", w: 180, h: 94 },
     subTitle: "Champaign, IL",
     roles: [
-      { 
+      {
         title: "Volunteer",
         timeline: "Jan 2023 - May 2023",
         description: [
@@ -220,10 +237,10 @@ const activities = [
     ]
   },
   {
-    imageData: {alt: "Expert Learning Assistant", src: "activities/physics.png", w:250, h:91}, 
+    imageData: { alt: "Expert Learning Assistant", src: "activities/physics.png", w: 250, h: 91 },
     subTitle: "Urbana, IL",
     roles: [
-      { 
+      {
         title: `Expert Learning Assistant`,
         timeline: "Aug 2020 - May 2021",
         description: [
@@ -235,10 +252,10 @@ const activities = [
     ]
   },
   {
-    imageData: {alt: "SHPE UIUC Chapter", src: "activities/shpe.png", w:175, h:54}, 
+    imageData: { alt: "SHPE UIUC Chapter", src: "activities/shpe.png", w: 175, h: 54 },
     subTitle: "Urbana, IL",
     roles: [
-      { 
+      {
         title: "Fundraising Co-Lead",
         timeline: "July 2020 - May 2021",
         description: [
@@ -247,7 +264,7 @@ const activities = [
           `Managed organization funding for social and professional events including conventions and career fairs that require travel.`
         ],
       },
-      { 
+      {
         title: "Activities Lead",
         timeline: "July 2020 - May 2021",
         description: [
@@ -256,7 +273,7 @@ const activities = [
           `Established partnerships with local schools and other educational institutions to expand the reach of engineering education programs.`
         ],
       },
-      { 
+      {
         title: "Round-Table Treasurer",
         timeline: "Aug 2019 - May 2020",
         description: [
@@ -271,67 +288,67 @@ const activities = [
 ]
 
 const companies = [
-{   
-  imageData: {alt: "Health Alliance", src: "ha.png", w:140, h:38}, 
-  location: "Champaign, IL",
-  roles: [
   {
-      title:"Lead CM System Analyst", 
-      timeline: "Feb 2024 - Current",
-      description: [
-      `Developed automated tools that enhanced the importation of auditing data and improved overall system functionality, reducing task completion time by over 70%.`,
-      `Accurately unit test system upgrades and features, and create comprehensive solutions for critical system errors in a timely manner to avoid disruption in user workflows.`,
-      `Communicate with business owners on a regular basis to create scalable solutions to enhance and optimize workflows within Epic’s software.`,
-      `Utilize SQL to modify queries, enabling comprehensive auditing of case data, thereby ensuring accuracy and compliance with regulatory standards.`,
-      `Effectively articulate technical concepts and project accomplishments in a clear and meaningful manner for non-technical business owners to understand the progress of larger projects.`
-  ],
-  }
-  ]
-},
-{   
-  imageData: {alt: "Motorola Solutions", src: "Motorola-Solutions.png", w:275, h:31},
-  location: "Champaign, IL",
-  roles: [
-  {
-      title:"Software Engineer: Frontend", 
-      timeline: "Sept 2023 - Dec 2023",
-      description: [
-      `Gained hands-on experience in writing unit tests and end-to-end tests for Angular applications, ensuring code reliability and quality.`,
-      `Wrote production ready code, conducted rigorous testing, review, and followed best practices for a secure and reliable app.`,
-      `Engaged in effective communication to convey ideas, suggestions, and project updates, ensuring myself and team members were well-informed and aligned with project goals.`
-      ],
+    imageData: { alt: "Health Alliance", src: "ha.png", w: 140, h: 38 },
+    location: "Champaign, IL",
+    roles: [
+      {
+        title: "Lead CM System Analyst",
+        timeline: "Feb 2024 - Current",
+        description: [
+          `Developed automated tools that enhanced the importation of auditing data and improved overall system functionality, reducing task completion time by over 70%.`,
+          `Accurately unit test system upgrades and features, and create comprehensive solutions for critical system errors in a timely manner to avoid disruption in user workflows.`,
+          `Communicate with business owners on a regular basis to create scalable solutions to enhance and optimize workflows within Epic’s software.`,
+          `Utilize SQL to modify queries, enabling comprehensive auditing of case data, thereby ensuring accuracy and compliance with regulatory standards.`,
+          `Effectively articulate technical concepts and project accomplishments in a clear and meaningful manner for non-technical business owners to understand the progress of larger projects.`
+        ],
+      }
+    ]
   },
   {
-      title:"Software Engineer: Backend", 
-      timeline: "May 2021 - May 2022",
-      description: [
-      `Used python to create a dynamic method of generating and replacing tailored 
+    imageData: { alt: "Motorola Solutions", src: "Motorola-Solutions.png", w: 275, h: 31 },
+    location: "Champaign, IL",
+    roles: [
+      {
+        title: "Software Engineer: Frontend",
+        timeline: "Sept 2023 - Dec 2023",
+        description: [
+          `Gained hands-on experience in writing unit tests and end-to-end tests for Angular applications, ensuring code reliability and quality.`,
+          `Wrote production ready code, conducted rigorous testing, review, and followed best practices for a secure and reliable app.`,
+          `Engaged in effective communication to convey ideas, suggestions, and project updates, ensuring myself and team members were well-informed and aligned with project goals.`
+        ],
+      },
+      {
+        title: "Software Engineer: Backend",
+        timeline: "May 2021 - May 2022",
+        description: [
+          `Used python to create a dynamic method of generating and replacing tailored 
       MySQL procedures to optimize database performance based on a user\'s product ownership.`,
-      `Merged & cleaned data from CouchDB and Cosmos through Python scripts for seamless information flow across our application\'s pipeline.`,
-      `Engaged with international teams in daily design meetings to drive 
+          `Merged & cleaned data from CouchDB and Cosmos through Python scripts for seamless information flow across our application\'s pipeline.`,
+          `Engaged with international teams in daily design meetings to drive 
       project success and maintain clear communication to meet biweekly sprint goals.`
-      ],
-  }
-  ],
-},
-{   
-  imageData: {alt: "IBM", src: "ibm.png", w:100, h:40},
-  location: "Bloomginton, IL",
-  roles: [
-  {
-      title:"Software Developer", 
-      timeline: "May 2022 - Aug 2022",
-      description: [
-      `Proficient in leveraging RESTful APIs within Python development, utilizing tools like GitHub 
-      and ServiceNow to streamline collaboration and project management.`,
-      `Skilled in designing and implementing MySQL databases, seamlessly integrating 
-      them with Python applications to optimize data storage and retrieval capabilities.`,
-      `Engaged in secure coding practices incorporating user / pw protocols to safeguard 
-      sensitive user information and maintain system integrity.`
-      ],
+        ],
+      }
+    ],
   },
-  ],
-},
+  {
+    imageData: { alt: "IBM", src: "ibm.png", w: 100, h: 40 },
+    location: "Bloomginton, IL",
+    roles: [
+      {
+        title: "Software Developer",
+        timeline: "May 2022 - Aug 2022",
+        description: [
+          `Proficient in leveraging RESTful APIs within Python development, utilizing tools like GitHub 
+      and ServiceNow to streamline collaboration and project management.`,
+          `Skilled in designing and implementing MySQL databases, seamlessly integrating 
+      them with Python applications to optimize data storage and retrieval capabilities.`,
+          `Engaged in secure coding practices incorporating user / pw protocols to safeguard 
+      sensitive user information and maintain system integrity.`
+        ],
+      },
+    ],
+  },
 ]
 
 

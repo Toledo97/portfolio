@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default async function Page() {
   return (
     <main>
-      <div className="flex flex-wrap gap-4 bg-gray-50 shadow p-6 justify-center">
+      <div className="flex flex-wrap gap-4 shadow p-6 justify-center">
         <div className="mt-2 flex flex-col " >
           <ProfileCard/>
         </div>

@@ -12,6 +12,7 @@ export type Role = {
   title: string;
   timeline: string;
   description: string[];
+  url?: string;
 }
 
 export type Entity = {
@@ -42,6 +43,14 @@ export type Signature = {
   platform: string;
   message: string;
   date: string;
+}
+
+export type RaceType = {
+  name : string;
+  date : string;
+  imageData : ImageData;
+  distance : number;
+  units : string;
 }
 
 export interface LinkCardProps {

@@ -211,7 +211,7 @@ const activities = [
         url: "https://runwithapurpose.vercel.app/",
         description: [
           "Actively train and compete in multiple races with the long-term goal of completing the full Chicago Running Series.",
-          "Partner with local businesses by featuring their logos on race apparel and promotional materials.",
+          "Partner with businesses located in Humboldt Park by featuring their logos on race apparel and promotional materials.",
           "Represent the Humboldt Park community and celebrate Puerto Rican culture at every race event.",
           "Give back through community involvement by offering volunteer support and promoting positive visibility for neighborhood organizations.",
         ],

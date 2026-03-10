@@ -4,7 +4,6 @@ const certificatesBundle = [
   {
     title: "Epic University",
     collection: [
-      // {alt: "Cadence", src: "EPIC.png", w:135, h:135, issued: "Ongoing", msg: "Cadence", verify:"TBC"},
 
       { alt: "Referrals and Authorizations", src: "EPIC.png", w: 135, h: 135, issued: "May 5th, 2025", msg: "Referrals and Authorizations", verify: "1473175718" },
 
@@ -58,7 +57,6 @@ const skillsBundle = [
       { alt: "MySQL", src: "mysql.png", w: 45, h: 45 },
       { alt: "Postgres", src: "Postgresql.png", w: 45, h: 45 },
       { alt: "Mongo", src: "mongodb.png", w: 50, h: 50 },
-      // {alt: "Neo4j", src: "neo4j.png", w:50, h:50},
     ]
   },
   {
